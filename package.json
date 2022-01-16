@@ -1,0 +1,26 @@
+{
+	"name": "foretag-theme",
+	"displayName": "Foretag Theme",
+	"description": "Foretag theme(s) for VS Code",
+	"publisher": "foretag",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ForetagInc/vscode-theme.git"
+	},
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Foretag Indigo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Foretag : Indigo-color-theme.json"
+			}
+		]
+	}
+}
