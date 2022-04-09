@@ -3,11 +3,12 @@
 	"displayName": "Foretag Theme",
 	"description": "Foretag theme(s) for VS Code",
 	"publisher": "foretag",
+	"icon": "images/foretag_logo_yellow.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ForetagInc/vscode-theme.git"
 	},
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
