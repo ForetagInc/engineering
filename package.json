@@ -1,19 +1,34 @@
 {
-	"name": "foretag-theme",
-	"displayName": "Foretag Theme",
-	"description": "Foretag theme(s) for VS Code",
+	"name": "development-toolkit",
+	"displayName": "Foretag Development Toolkit",
+	"description": "Foretag themes, tools & extensions for VS Code",
 	"publisher": "foretag",
 	"icon": "images/foretag_logo_yellow.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ForetagInc/vscode-theme.git"
 	},
-	"version": "0.2.1",
+	"version": "0.2.3",
 	"engines": {
 		"vscode": "^1.66.1"
 	},
 	"categories": [
-		"Themes"
+		"Themes",
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"matklad.rust-analyzer",
+		"serayuzgur.crates",
+		"vadimcn.vscode-lldb",
+		"masterco.master-styles-language-service",
+		"microsoft.npm",
+		"tamasfe.even-better-toml",
+		"redhat.vscode-yaml",
+		"mikestead.dotenv",
+		"editorconfig.editorconfig",
+		"please-build.plz-vscode",
+		"microsoft.kubernetes",
+		"microsoft.docker"
 	],
 	"contributes": {
 		"themes": [

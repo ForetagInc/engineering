@@ -1,4 +1,8 @@
-# Foretag VSCode Themes
+
+# Foretag Development Toolkit
+For Visual Studio Code
+
+## Themes
 
 A collection of dark, light and high contrast Foretag's VSCode themes. The themes included are optimized for various languages such as Rust, TypeScript, GraphQL, YAML, TOML, JSON and Terraform.
 
