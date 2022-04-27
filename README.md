@@ -4,6 +4,8 @@ For Visual Studio Code
 
 [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
 
+This toolkit is heavily inspired by our technology stack, which can be found on [Stackshare](https://stackshare.io/foretag/foretag), and updates will be made in parallel to any changes in our stack to provide our employees and contributors the best possible development experience.
+
 ## Languages
 
 Adds the following languages:
@@ -12,7 +14,7 @@ Adds the following languages:
 
 ## Themes
 
-A collection of dark, light and high contrast Foretag's VSCode themes. The themes included are optimized for various languages such as Rust, TypeScript, GraphQL, YAML, TOML, JSON and Terraform.
+A collection of dark, light and high contrast Foretag's VSCode themes. The themes included are optimized for various languages such as Rust, TypeScript, GraphQL, YAML, TOML and JSON.
 
 ### Features
 - Dark, light and high contrast variants
@@ -25,5 +27,6 @@ A collection of dark, light and high contrast Foretag's VSCode themes. The theme
 
 ### Update cycle
 Updates are pushed regularly including but not limited to, support for additional languages, patterns etc.
+
 
 
