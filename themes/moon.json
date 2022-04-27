@@ -1,0 +1,36 @@
+{
+	"name": "Moon",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#0d0d0d",
+		// Sidebar
+		"sideBar.background": "#0d0d0d",
+		"sideBar.border": "#333333",
+		"sideBarSectionHeader.border": "#33333",
+		// Activitybar
+		"activityBarBadge.background": "#7f52ff",
+		"activityBar.foreground": "#FFCFD4",
+		"activityBar.background": "#262626",
+		"activityBar.border": "#333333",
+		// Titlebar
+		"titleBar.activeBackground": "#262626",
+		"titleBar.activeForeground": "#eeeeee",
+		"titleBar.inactiveBackground": "#262626",
+		"titleBar.inactiveForeground": "#eeeeee",
+		// Tabs
+		"tab.activeBorderTop": "#f3f3f3",
+		"tab.activeBackground": "#0d0d0d",
+		"tab.border": "#151327",
+		"tab.inactiveForeground": "#ddd9ee8a",
+		"tab.inactiveBackground": "#0d0d0d",
+		"tab.hoverForeground": "#d3cfe5",
+		"tab.hoverBackground": "#0d0d0d",
+		"editorGroupHeader.tabsBackground": "#262626",
+		// Statusbar
+		"statusBar.background": "#262626",
+		// Terminal
+		"terminal.background": "#0d0d0d",
+		// Panel
+		"panel.border": "#333333",
+	}
+}

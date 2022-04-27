@@ -97,9 +97,14 @@
 		],
 		"themes": [
 			{
-				"label": "Foretag Indigo",
+				"label": "Foretag: Moon",
 				"uiTheme": "vs-dark",
-				"path": "./themes/Foretag : Indigo-color-theme.json"
+				"path": "./themes/moon.json"
+			},
+			{
+				"label": "Foretag: Indigo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/indigo.json"
 			}
 		]
 	}
