@@ -27,13 +27,13 @@
 		"serayuzgur.crates",
 		"vadimcn.vscode-lldb",
 		"masterco.master-styles-language-service",
-		"microsoft.npm",
+		"eg2.vscode-npm-script",
 		"tamasfe.even-better-toml",
 		"redhat.vscode-yaml",
 		"editorconfig.editorconfig",
 		"please-build.plz-vscode",
-		"microsoft.kubernetes",
-		"microsoft.docker"
+		"ms-kubernetes-tools.vscode-kubernetes-tools",
+		"ms-azuretools.vscode-docker"
 	],
 	"contributes": {
 		"languages": [
