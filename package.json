@@ -31,6 +31,7 @@
 		"tamasfe.even-better-toml",
 		"redhat.vscode-xml",
 		"redhat.vscode-yaml",
+		"dtsvet.vscode-wasm",
 		"editorconfig.editorconfig",
 		"please-build.plz-vscode",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
