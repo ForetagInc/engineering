@@ -723,6 +723,37 @@
 			"settings": {
 				"foreground": "#EEFFFF"
 			}
+		},
+		{
+			"name": "TOML - Entry",
+			"scope": [
+				"variable.key.toml",
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"name": "TOML - Table Punctuation",
+			"scope": [
+				"punctuation.definition.table.toml",
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"name": "TOML - Table Content",
+			"scope": [
+				"variable.key.table.toml",
+				"punctuation.separator.dot"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#C3E88D"
+			}
 		}
 	]
 }

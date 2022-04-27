@@ -3,7 +3,12 @@
 
 All notable changes to the "foretag.develoment-toolkit" extension will be documented in this file.
 
-## [0.0.3] - 22-04-28
+## [0.0.4] - 22-04-28
+### Added
+- Adds WASM Toolkit to the extension pack
+- TOML syntax highlighting for Indigo theme
+
+## [0.0.3] - 22-04-27
 ### Added
 - Adds XML language by RedHat to the extension pack
 ### Fixed
@@ -16,5 +21,7 @@ All notable changes to the "foretag.develoment-toolkit" extension will be docume
 ## [0.0.1] - 2022-01-18
 ### Added
 - List, Debug and Terminal stylings for Indigo
+
+
 
 
