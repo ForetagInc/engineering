@@ -2,6 +2,11 @@
 	"name": "development-toolkit",
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, tools & extensions for VS Code",
+	"keywords": [
+		"env",
+		"dotenv",
+		"foretag"
+	],
 	"publisher": "foretag",
 	"icon": "images/foretag_logo_yellow.png",
 	"repository": {
@@ -13,6 +18,7 @@
 		"vscode": "^1.66.1"
 	},
 	"categories": [
+		"Programming Languages",
 		"Themes",
 		"Extension Packs"
 	],
@@ -24,13 +30,69 @@
 		"microsoft.npm",
 		"tamasfe.even-better-toml",
 		"redhat.vscode-yaml",
-		"mikestead.dotenv",
 		"editorconfig.editorconfig",
 		"please-build.plz-vscode",
 		"microsoft.kubernetes",
 		"microsoft.docker"
 	],
 	"contributes": {
+		"languages": [
+			{
+				"id": "dotenv",
+				"aliases": [
+					"Environment Variables",
+					"dotenv",
+					"env"
+				],
+				"extensions": [
+					".flaskenv",
+					".env",
+					".env-sample",
+					".env.example",
+					".env.template",
+					".env.local",
+					".env.dev",
+					".env.dev.local",
+					".env.build",
+					".env.build.local",
+					".env.development",
+					".env.development.local",
+					".env.test",
+					".env.test.local",
+					".env.testing",
+					".env.qa",
+					".env.qa.local",
+					".env.uat",
+					".env.uat.local",
+					".env.stag",
+					".env.stag.local",
+					".env.stage",
+					".env.stage.local",
+					".env.staging",
+					".env.staging.local",
+					".env.live",
+					".env.live.local",
+					".env.production",
+					".env.production.local",
+					".env.prod",
+					".env.prod.local"
+				],
+				"filenamePatterns": [
+					"?*env"
+				],
+				"filenames": [
+					"env"
+				],
+				"configuration": "./languages/env/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "dotenv",
+				"scopeName": "source.env",
+				"path": "./languages/env/syntaxes/env.tmLanguage"
+			}
+		],
 		"themes": [
 			{
 				"label": "Foretag Indigo",
