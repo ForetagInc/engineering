@@ -29,6 +29,7 @@
 		"masterco.master-styles-language-service",
 		"eg2.vscode-npm-script",
 		"tamasfe.even-better-toml",
+		"redhat.vscode-xml",
 		"redhat.vscode-yaml",
 		"editorconfig.editorconfig",
 		"please-build.plz-vscode",
