@@ -36,7 +36,7 @@
 		"Other"
 	],
 	"extensionPack": [
-		"matklad.rust-analyzer",
+		"rust-lang.rust-analyzer",
 		"serayuzgur.crates",
 		"vadimcn.vscode-lldb",
 		"masterco.master-styles-language-service",
