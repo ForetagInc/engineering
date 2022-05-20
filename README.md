@@ -4,7 +4,13 @@ For Visual Studio Code
 
 [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
 
-This toolkit is heavily inspired by our technology stack, which can be found on [Stackshare](https://stackshare.io/foretag/foretag), and updates will be made in parallel to any changes in our stack to provide our employees and contributors the best possible development experience.
+This toolkit is heavily inspired by our technology stack, which can be found on [Stackshare](https://stackshare.io/foretag/foretag), and updates will be made in parallel to any changes in our stack to provide our employees and contributors the best possible development experience. All batteries are included: extensions, themes, languages, snippets and more.
+
+## Extensions
+
+Adds the following extensions:
+
+- Rust targets: Select your rust compilation target
 
 ## Languages
 
@@ -25,8 +31,10 @@ A collection of dark, light and high contrast Foretag's VSCode themes. The theme
 
 *The theme also functions on other operating systems like Windows without a issue, but may not resemble the primary supported platforms.
 
-### Update cycle
-Updates are pushed regularly including but not limited to, support for additional languages, patterns etc.
+
+
+
+
 
 
 

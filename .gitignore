@@ -1,5 +1,11 @@
+# Node
+node_modules
+
 # MacOS
 .DS_Store
 
 # VSCode packages
 *.vsix
+
+# Build
+build
