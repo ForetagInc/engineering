@@ -20,7 +20,7 @@
 		"type": "git",
 		"url": "https://github.com/ForetagInc/vscode-toolkit.git"
 	},
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"engines": {
 		"vscode": "^1.66.1"
 	},
@@ -39,7 +39,7 @@
 		"rust-lang.rust-analyzer",
 		"serayuzgur.crates",
 		"vadimcn.vscode-lldb",
-		"masterco.master-styles-language-service",
+		"masterco.master-css-language-service",
 		"eg2.vscode-npm-script",
 		"tamasfe.even-better-toml",
 		"redhat.vscode-xml",
