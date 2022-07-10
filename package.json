@@ -2,6 +2,10 @@
 	"name": "development-toolkit",
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, tools & extensions for VS Code",
+	"version": "0.0.8",
+	"workspaces": [
+		"packages"
+	],
 	"keywords": [
 		"env",
 		"dotenv",
@@ -15,12 +19,11 @@
 	],
 	"main": "./build/extension.js",
 	"publisher": "foretag",
-	"icon": "images/foretag_logo_yellow.png",
+	"icon": "assets/images/foretag_logo_yellow.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ForetagInc/vscode-toolkit.git"
 	},
-	"version": "0.0.6",
 	"engines": {
 		"vscode": "^1.66.1"
 	},
@@ -33,9 +36,11 @@
 		"Programming Languages",
 		"Themes",
 		"Extension Packs",
+		"Visualization",
 		"Other"
 	],
 	"extensionPack": [
+		"foretag.themes",
 		"rust-lang.rust-analyzer",
 		"serayuzgur.crates",
 		"vadimcn.vscode-lldb",
@@ -305,16 +310,11 @@
 				"path": "./languages/env/syntaxes/env.tmLanguage"
 			}
 		],
-		"themes": [
+		"iconThemes": [
 			{
-				"label": "Foretag: Moon",
-				"uiTheme": "vs-dark",
-				"path": "./themes/moon.json"
-			},
-			{
-				"label": "Foretag: Indigo",
-				"uiTheme": "vs-dark",
-				"path": "./themes/indigo.json"
+				"id": "foretag-default-icons",
+				"label": "Foretag: Default",
+				"path": "./icons/default-icons.json"
 			}
 		]
 	},
