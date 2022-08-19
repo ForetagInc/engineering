@@ -24,7 +24,7 @@
 	},
 	"scripts": {
 		"prebuild": "rm -rf build",
-		"vscode:prepublish": "npm run compile && npm run icons:build",
+		"prepublish": "npm run prebuild && npm run compile && npm run icons:build",
 		"icons:build": "npm run icons:copy && node build/icons/index.js",
 		"icons:copy": "mkdir -p build/svgs && cp -R icons/svgs build",
 		"compile": "tsc -p ./",
