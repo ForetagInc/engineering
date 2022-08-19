@@ -12,7 +12,7 @@
 		"onLanguage:rust",
 		"onCommand:foretag-rust.setRustTarget"
 	],
-	"main": "./build/extension.js",
+	"main": "./build/extensions.js",
 	"publisher": "foretag",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"repository": {
@@ -23,7 +23,10 @@
 		"vscode": "^1.66.1"
 	},
 	"scripts": {
-		"vscode:prepublish": "bun run compile",
+		"prebuild": "rm -rf build",
+		"vscode:prepublish": "npm run compile && npm run icons:build",
+		"icons:build": "npm run icons:copy && node build/icons/index.js",
+		"icons:copy": "mkdir -p build/svgs && cp -R icons/svgs build",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./"
 	},
@@ -42,6 +45,7 @@
 		"dtsvet.vscode-wasm",
 		"editorconfig.editorconfig",
 		"please-build.plz-vscode",
+		"hashicorp.terraform",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
 		"ms-azuretools.vscode-docker",
 		"GraphQL.vscode-graphql",
@@ -259,7 +263,6 @@
 			{
 				"id": "dotenv",
 				"extensions": [
-					".flaskenv",
 					".env",
 					".env-sample",
 					".env.example",
@@ -311,7 +314,7 @@
 			{
 				"id": "foretag-default-icons",
 				"label": "Foretag: Default",
-				"path": "./icons/default-icons.json"
+				"path": "./build/icons/default-icons.json"
 			}
 		],
 		"themes": [
@@ -328,7 +331,12 @@
 		]
 	},
 	"devDependencies": {
+		"@types/fs-extra": "^9.0.13",
+		"@types/node": "^18.7.6",
 		"@types/vscode": "^1.66.0",
 		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"fs-extra": "^10.1.0"
 	}
 }
