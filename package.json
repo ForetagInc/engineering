@@ -1,16 +1,11 @@
 {
-	"name": "development-toolkit",
+	"name": "@foretag/vscode-toolkit",
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, tools & extensions for VS Code",
-	"version": "0.0.8",
-	"workspaces": [
-		"packages"
-	],
+	"version": "0.0.9",
 	"keywords": [
-		"env",
-		"dotenv",
 		"rust",
-		"rust-targets",
+		"themes",
 		"foretag"
 	],
 	"activationEvents": [
@@ -28,7 +23,7 @@
 		"vscode": "^1.66.1"
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
+		"vscode:prepublish": "bun run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./"
 	},
@@ -40,19 +35,22 @@
 		"Other"
 	],
 	"extensionPack": [
-		"foretag.themes",
 		"rust-lang.rust-analyzer",
-		"serayuzgur.crates",
-		"vadimcn.vscode-lldb",
 		"masterco.master-css-language-service",
-		"tamasfe.even-better-toml",
 		"redhat.vscode-xml",
 		"redhat.vscode-yaml",
 		"dtsvet.vscode-wasm",
 		"editorconfig.editorconfig",
 		"please-build.plz-vscode",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
-		"ms-azuretools.vscode-docker"
+		"ms-azuretools.vscode-docker",
+		"GraphQL.vscode-graphql",
+		"tauri-apps.tauri-vscode",
+		"lottiefiles.vscode-lottie",
+		"CucumberOpen.cucumber-official",
+		"vadimcn.vscode-lldb",
+		"serayuzgur.crates",
+		"tamasfe.even-better-toml"
 	],
 	"contributes": {
 		"commands": [
@@ -315,10 +313,22 @@
 				"label": "Foretag: Default",
 				"path": "./icons/default-icons.json"
 			}
+		],
+		"themes": [
+			{
+				"label": "Foretag: Moon",
+				"uiTheme": "vs-dark",
+				"path": "./themes/moon.json"
+			},
+			{
+				"label": "Foretag: Indigo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/indigo.json"
+			}
 		]
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.66.0",
-		"typescript": "^4.6.3"
+		"typescript": "^4.7.4"
 	}
 }
