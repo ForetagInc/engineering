@@ -1,23 +1,18 @@
 {
-	"name": "development-toolkit",
+	"name": "@foretag/vscode-toolkit",
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, tools & extensions for VS Code",
-	"version": "0.0.8",
-	"workspaces": [
-		"packages"
-	],
+	"version": "0.0.9",
 	"keywords": [
-		"env",
-		"dotenv",
 		"rust",
-		"rust-targets",
+		"themes",
 		"foretag"
 	],
 	"activationEvents": [
 		"onLanguage:rust",
 		"onCommand:foretag-rust.setRustTarget"
 	],
-	"main": "./build/extension.js",
+	"main": "./build/extensions.js",
 	"publisher": "foretag",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"repository": {
@@ -28,7 +23,10 @@
 		"vscode": "^1.66.1"
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
+		"prebuild": "rm -rf build",
+		"prepublish": "npm run prebuild && npm run compile && npm run icons:build",
+		"icons:build": "npm run icons:copy && node build/icons/index.js",
+		"icons:copy": "mkdir -p build/svgs && cp -R icons/svgs build",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./"
 	},
@@ -40,19 +38,23 @@
 		"Other"
 	],
 	"extensionPack": [
-		"foretag.themes",
 		"rust-lang.rust-analyzer",
-		"serayuzgur.crates",
-		"vadimcn.vscode-lldb",
 		"masterco.master-css-language-service",
-		"tamasfe.even-better-toml",
 		"redhat.vscode-xml",
 		"redhat.vscode-yaml",
 		"dtsvet.vscode-wasm",
 		"editorconfig.editorconfig",
 		"please-build.plz-vscode",
+		"hashicorp.terraform",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
-		"ms-azuretools.vscode-docker"
+		"ms-azuretools.vscode-docker",
+		"GraphQL.vscode-graphql",
+		"tauri-apps.tauri-vscode",
+		"lottiefiles.vscode-lottie",
+		"CucumberOpen.cucumber-official",
+		"vadimcn.vscode-lldb",
+		"serayuzgur.crates",
+		"tamasfe.even-better-toml"
 	],
 	"contributes": {
 		"commands": [
@@ -261,7 +263,6 @@
 			{
 				"id": "dotenv",
 				"extensions": [
-					".flaskenv",
 					".env",
 					".env-sample",
 					".env.example",
@@ -313,12 +314,29 @@
 			{
 				"id": "foretag-default-icons",
 				"label": "Foretag: Default",
-				"path": "./icons/default-icons.json"
+				"path": "./build/icons/default-icons.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Foretag: Moon",
+				"uiTheme": "vs-dark",
+				"path": "./themes/moon.json"
+			},
+			{
+				"label": "Foretag: Indigo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/indigo.json"
 			}
 		]
 	},
 	"devDependencies": {
+		"@types/fs-extra": "^9.0.13",
+		"@types/node": "^18.7.6",
 		"@types/vscode": "^1.66.0",
-		"typescript": "^4.6.3"
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"fs-extra": "^10.1.0"
 	}
 }
