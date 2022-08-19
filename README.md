@@ -1,36 +1,36 @@
 
 # Foretag Development Toolkit
-For Visual Studio Code
+For Visual Studio Code − Desktop and Cloud
 
-[VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/foretag.development-toolkit.svg)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/foretag.development-toolkit.svg)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-star/foretag.development-toolkit.svg)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
 
-This toolkit is heavily inspired by our technology stack, which can be found on [Stackshare](https://stackshare.io/foretag/foretag), and updates will be made in parallel to any changes in our stack to provide our employees and contributors the best possible development experience. All batteries are included: extensions, themes, languages, snippets and more.
+### Marketplaces
+
+- [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+
+The toolkit was built for engineers and contributors at Foretag and heavily focused on our technology stack - found on [Stackshare](https://stackshare.io/foretag/foretag), following updates in parallel. Its objective is to provide a unified development experience, limiting complexity and improving accessibility. You can find all the bells and whistles: theme, icons, extensions, language, snippets, and more right out of the box.
+
+
+We pride ourselves on building world-class software, and our developer experience is quintessential in helping us achieve this. So, we've taken feedback from our engineers and the wider community to build a collection of tools to bring a native IDE experience to VSCode and reduce dependence on third-party tooling. Updates are regular, so feel free to create a discussion with your idea if you'd like to improve the experience further.
+
+## Features
+- Built for the Foretag [technology stack](https://stackshare.io/foretag/foretag) 
+- Clean and focused Theme
+	- Based on Cosmos
+	- UI focused towards Linux
+	- Designed for mono fonts
+	- Ligature support
+- Icons to twin with our theme
 
 ## Extensions
-
-Adds the following extensions:
 
 - Rust targets: Select your rust compilation target
 
 ## Languages
 
-Adds the following languages:
-
 - Dotenv
-
-## Themes
-
-A collection of dark, light and high contrast Foretag's VSCode themes. The themes included are optimized for various languages such as Rust, TypeScript, GraphQL, YAML, TOML and JSON.
-
-### Features
-- Dark, light and high contrast variants
-- Optimized for multiple languages
-- Built around operator (and similar) fonts with ligatures
-- UI focused towards MacOS and Linux*
-
-
-*The theme also functions on other operating systems like Windows without a issue, but may not resemble the primary supported platforms.
-
 
 
 
