@@ -1,4 +1,4 @@
-name: vscode-marketplace
+name: marketplace
 
 on:
     release:
@@ -12,6 +12,7 @@ jobs:
             - uses: actions/setup-node@v3
               with:
                   node-version: latest
+            - run: npm ci
             - run: npm run prepublish
             - name: Publish to VSCode Marketplace
               uses: HaaLeo/publish-vscode-extension@v1
