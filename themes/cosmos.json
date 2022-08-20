@@ -61,6 +61,7 @@
 		"tab.inactiveBackground": "#191919",
 		"editorGroupHeader.tabsBackground": "#191919",
 		// Titlebar
+		"titleBar.background": "#191919",
 		"titleBar.activeBackground": "#191919",
 		"titleBar.activeForeground": "#f1e8ff",
 		"titleBar.inactiveBackground": "#161526",
