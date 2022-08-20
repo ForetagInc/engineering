@@ -319,9 +319,9 @@
 		],
 		"themes": [
 			{
-				"label": "Foretag: Moon",
+				"label": "Foretag: Cosmos",
 				"uiTheme": "vs-dark",
-				"path": "./themes/moon.json"
+				"path": "./themes/cosmos.json"
 			},
 			{
 				"label": "Foretag: Indigo",
