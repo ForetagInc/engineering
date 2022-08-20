@@ -2,7 +2,7 @@
 	"name": "development-toolkit",
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, tools & extensions for VS Code",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"keywords": [
 		"rust",
 		"themes",
