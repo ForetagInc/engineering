@@ -9,6 +9,7 @@ For Visual Studio Code − Desktop and Cloud
 ### Marketplaces
 
 - [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+- [OpenVSX Registry](https://open-vsx.org/extension/foretag/development-toolkit)
 
 The toolkit was built for engineers and contributors at Foretag and heavily focused on our technology stack - found on [Stackshare](https://stackshare.io/foretag/foretag), following updates in parallel. Its objective is to provide a unified development experience, limiting complexity and improving accessibility. You can find all the bells and whistles: theme, icons, extensions, language, snippets, and more right out of the box.
 
