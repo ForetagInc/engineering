@@ -25,6 +25,7 @@
 		"editor.lineHighlightBackground": "#303030",
 		"editor.wordHighlightBackground": "#4c496b",
 		"editor.findMatchBackground": "#534f79",
+		"editor.foldBackground": "#7B797B25",
 		"editorMarkerNavigation.background": "#161526",
 		"scrollbar.shadow": "#00000000",
 		"editorBracketMatch.background": "#303030",
