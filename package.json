@@ -313,7 +313,7 @@
 		],
 		"iconThemes": [
 			{
-				"id": "foretag-default-icons",
+				"id": "foretag-cosmos-icons",
 				"label": "Foretag: Cosmos",
 				"path": "./build/icons.json"
 			}

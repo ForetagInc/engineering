@@ -1,4 +1,3 @@
-
 # Foretag Development Toolkit
 For Visual Studio Code − Desktop and Cloud
 

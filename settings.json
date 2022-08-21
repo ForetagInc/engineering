@@ -1,0 +1,20 @@
+{
+	"workbench.colorTheme": "Foretag: Cosmos",
+	"workbench.iconTheme": "foretag-cosmos-icons",
+	"editor.fontLigatures": true,
+	"editor.fontWeight": 400,
+	"editor.fontSize": 14,
+	"editor.formatOnSave": true,
+	"editor.cursorStyle": "block",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4,
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.cursorBlinking": "phase",
+	"rust-analyzer.debug.engine": "vadimcn.vscode-lldb",
+	"rust-analyzer.checkOnSave.command": "clippy",
+	"html.completion.attributeDefaultValue": "singlequotes",
+	"html.format.indentInnerHtml": true,
+	// Foretag internal
+	"redhat.telemetry.enabled": false
+}
