@@ -2,18 +2,15 @@
 	"name": "Cosmos",
 	"type": "dark",
 	"colors": {
-		// Basics
 		"progressBar.background": "#5D21D2",
 		"list.focusBackground": "#191919",
 		"list.activeSelectionForeground": "#f2eeff",
 		"list.hoverBackground": "#1C1C1C",
 		"list.activeSelectionBackground": "#303030",
 		"list.inactiveSelectionBackground": "#303030",
-		// Scrollbar slider
 		"scrollbarSlider.background": "#191919",
 		"scrollbarSlider.activeBackground": "#303030",
 		"scrollbarSlider.hoverBackground": "#303030",
-		// Editor
 		"editor.background": "#1C1C1C",
 		"editor.foreground": "#DAD6DA",
 		"editor.hoverHighlightBackground": "#211F39",
@@ -23,36 +20,29 @@
 		"editorLineNumber.activeForeground": "#7B797B",
 		"editor.lineHighlightBorder": "#303030",
 		"editor.lineHighlightBackground": "#303030",
-		"editorSuggestWidget.background": "#161526",
-		"editorSuggestWidget.selectedBackground": "#1C1D30",
 		"editor.wordHighlightBackground": "#4c496b",
 		"editor.findMatchBackground": "#534f79",
 		"editorMarkerNavigation.background": "#161526",
-		// Shadow
 		"scrollbar.shadow": "#00000000",
-		"widget.shadow": "#00000000",
-		// Editor Brackets
 		"editorBracketMatch.background": "#303030",
 		"editorBracketMatch.border": "#303030",
-		// Editor lines
 		"editorIndentGuide.background": "#303030",
 		"editorIndentGuide.activeBackground": "#7B797B",
 		"editorRuler.foreground": "#303030",
-		// Breadcrumb 
+		"widget.shadow": "#00000000",
+		"editorWidget.background": "#303030",
+		"editorSuggestWidget.background": "#161526",
+		"editorSuggestWidget.selectedBackground": "#1C1D30",
 		"breadcrumb.background": "#1C1C1C",
 		"breadcrumb.foreground": "#7B797B",
 		"breadcrumb.focusForeground": "#F1EDF1",
-		// Widgets
-		"editorWidget.background": "#303030",
 		"pickerGroup.foreground": "#191919",
-		// Sidebar
 		"sideBarTitle.foreground": "#fff",
 		"sideBar.border": "#191919",
 		"sideBarSectionHeader.background": "#1C1C1C",
 		"sideBarSectionHeader.border": "#1C1C1C",
 		"sideBar.background": "#191919",
 		"sideBar.foreground": "#e7e3f5ef",
-		// Tabs
 		"tab.border": "#191919",
 		"tab.inactiveForeground": "#ddd9ee8a",
 		"tab.hoverForeground": "#d3cfe5",
@@ -60,28 +50,21 @@
 		"tab.activeBackground": "#1C1C1C",
 		"tab.inactiveBackground": "#191919",
 		"editorGroupHeader.tabsBackground": "#191919",
-		// Titlebar
 		"titleBar.background": "#191919",
 		"titleBar.activeBackground": "#191919",
 		"titleBar.activeForeground": "#f1e8ff",
 		"titleBar.inactiveBackground": "#161526",
 		"titleBar.inactiveForeground": "#f1e8ff",
-		// Menubar
 		"menu.background": "#303030",
-		// Activitybar
 		"activityBarBadge.background": "#5D21D2",
 		"activityBarBadge.foreground": "#F1EDF1",
 		"activityBar.foreground": "#FFCFD4",
 		"activityBar.background": "#191919",
 		"activityBar.border": "#191919",
-		// Statusbar
 		"statusBar.background": "#191919",
-		// Terminal
 		"terminal.background": "#1C1C1C",
-		// Input
 		"input.background": "#23263C",
 		"input.placeholderForeground": "#b7b5d49c",
-		// Debug and misc
 		"debugToolBar.background": "#171529f6",
 		"gitDecoration.ignoredResourceForeground": "#69698f",
 		"panel.border": "#191919",
