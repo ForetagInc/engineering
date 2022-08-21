@@ -1,11 +1,12 @@
 {
 	"name": "development-toolkit",
 	"displayName": "Foretag Development Toolkit",
-	"description": "Foretag themes, tools & extensions for VS Code",
-	"version": "0.1.1",
+	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
+	"version": "0.1.2",
 	"keywords": [
 		"rust",
 		"themes",
+		"extension",
 		"foretag"
 	],
 	"activationEvents": [
@@ -23,8 +24,8 @@
 		"vscode": "^1.66.1"
 	},
 	"scripts": {
-		"prebuild": "rm -rf build",
-		"prepublish": "npm run prebuild && npm run compile && npm run icons:build",
+		"prebuild": "rm -rf build && npm run compile",
+		"prepublish": "npm run prebuild && npm run icons:build",
 		"icons:build": "npm run icons:copy && node build/icons/index.js",
 		"icons:copy": "mkdir -p build/svgs && cp -R icons/svgs build",
 		"compile": "tsc -p ./",
@@ -312,7 +313,7 @@
 		],
 		"iconThemes": [
 			{
-				"id": "foretag-default-icons",
+				"id": "foretag-cosmos-icons",
 				"label": "Foretag: Cosmos",
 				"path": "./build/icons.json"
 			}

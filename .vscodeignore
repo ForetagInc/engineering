@@ -1,3 +1,13 @@
 .vscode/**
 .vscode-test/**
+
 .gitignore
+tsconfig.json
+
+.github/**
+assets/icons/**
+
+extensions
+icons
+
+build/icons/**

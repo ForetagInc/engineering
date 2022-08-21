@@ -2,18 +2,18 @@
 	"name": "Cosmos",
 	"type": "dark",
 	"colors": {
-		// Basics
+		"button.background": "#5D21D2",
+		"button.foreground": "#F1EDF1",
 		"progressBar.background": "#5D21D2",
 		"list.focusBackground": "#191919",
 		"list.activeSelectionForeground": "#f2eeff",
 		"list.hoverBackground": "#1C1C1C",
 		"list.activeSelectionBackground": "#303030",
 		"list.inactiveSelectionBackground": "#303030",
-		// Scrollbar slider
 		"scrollbarSlider.background": "#191919",
 		"scrollbarSlider.activeBackground": "#303030",
 		"scrollbarSlider.hoverBackground": "#303030",
-		// Editor
+		"tree.indentGuidesStroke": "#303030",
 		"editor.background": "#1C1C1C",
 		"editor.foreground": "#DAD6DA",
 		"editor.hoverHighlightBackground": "#211F39",
@@ -23,36 +23,48 @@
 		"editorLineNumber.activeForeground": "#7B797B",
 		"editor.lineHighlightBorder": "#303030",
 		"editor.lineHighlightBackground": "#303030",
-		"editorSuggestWidget.background": "#161526",
-		"editorSuggestWidget.selectedBackground": "#1C1D30",
 		"editor.wordHighlightBackground": "#4c496b",
 		"editor.findMatchBackground": "#534f79",
+		"editor.foldBackground": "#7B797B25",
 		"editorMarkerNavigation.background": "#161526",
-		// Shadow
 		"scrollbar.shadow": "#00000000",
-		"widget.shadow": "#00000000",
-		// Editor Brackets
 		"editorBracketMatch.background": "#303030",
 		"editorBracketMatch.border": "#303030",
-		// Editor lines
 		"editorIndentGuide.background": "#303030",
 		"editorIndentGuide.activeBackground": "#7B797B",
 		"editorRuler.foreground": "#303030",
-		// Breadcrumb 
+		"widget.shadow": "#00000000",
+		"editorWidget.background": "#303030",
+		"editorSuggestWidget.background": "#191919",
+		"editorSuggestWidget.border": "#303030",
+		"editorSuggestWidget.foreground": "#7B797B",
+		"editorSuggestWidget.selectedBackground": "#1C1C1C",
+		"editorHoverWidget.background": "#303030",
+		"editorHoverWidget.foreground": "#7B797B",
+		"editorHoverWidget.border": "#303030",
+		"peekView.border": "#303030",
+		"peekViewTitle.background": "#191919",
+		"peekViewTitleLabel.foreground": "#7B797B",
+		"peekViewTitleDescription.foreground": "#303030",
+		"peekViewEditor.background": "#303030",
+		"peekViewEditorGutter.background": "#1C1C1C",
+		"peekViewEditor.matchHighlightBackground": "#5D21D2",
+		"peekViewResult.matchHighlightBackground": "#5D21D250",
+		"peekViewResult.selectionBackground": "#303030",
+		"peekViewResult.selectionForeground": "#F1EDF1",
+		"peekViewResult.background": "#191919",
+		"peekViewResult.lineForeground": "#7B797B",
+		"peekViewResult.fileForeground": "#7B797B",
 		"breadcrumb.background": "#1C1C1C",
 		"breadcrumb.foreground": "#7B797B",
 		"breadcrumb.focusForeground": "#F1EDF1",
-		// Widgets
-		"editorWidget.background": "#303030",
 		"pickerGroup.foreground": "#191919",
-		// Sidebar
 		"sideBarTitle.foreground": "#fff",
 		"sideBar.border": "#191919",
 		"sideBarSectionHeader.background": "#1C1C1C",
 		"sideBarSectionHeader.border": "#1C1C1C",
 		"sideBar.background": "#191919",
 		"sideBar.foreground": "#e7e3f5ef",
-		// Tabs
 		"tab.border": "#191919",
 		"tab.inactiveForeground": "#ddd9ee8a",
 		"tab.hoverForeground": "#d3cfe5",
@@ -60,32 +72,43 @@
 		"tab.activeBackground": "#1C1C1C",
 		"tab.inactiveBackground": "#191919",
 		"editorGroupHeader.tabsBackground": "#191919",
-		// Titlebar
+		"titleBar.background": "#191919",
 		"titleBar.activeBackground": "#191919",
 		"titleBar.activeForeground": "#f1e8ff",
 		"titleBar.inactiveBackground": "#161526",
 		"titleBar.inactiveForeground": "#f1e8ff",
-		// Menubar
 		"menu.background": "#303030",
-		// Activitybar
+		"menu.separatorBackground": "#7B797B",
+		"menu.selectionBackground": "#1C1C1C",
+		"menu.selectionForeground": "#F1EDF1",
 		"activityBarBadge.background": "#5D21D2",
 		"activityBarBadge.foreground": "#F1EDF1",
-		"activityBar.foreground": "#FFCFD4",
+		"activityBar.inactiveForeground": "#303030",
+		"activityBar.foreground": "#7B797B",
 		"activityBar.background": "#191919",
-		"activityBar.border": "#191919",
-		// Statusbar
 		"statusBar.background": "#191919",
-		// Input
-		"input.background": "#23263C",
-		"input.placeholderForeground": "#b7b5d49c",
-		// Debug and misc
+		"statusBar.foreground": "#7B797B",
+		"statusBarItem.remoteBackground": "#303030",
+		"statusBarItem.remoteForeground": "#F1EDF1",
+		"statusBar.debuggingBackground": "#5D21D2",
+		"statusBar.debuggingForeground": "#F1EDF1",
+		"input.background": "#1C1C1C",
+		"input.placeholderForeground": "#7B797B",
+		"input.border": "#303030",
+		"inputOption.activeBackground": "#303030",
+		"inputOption.activeForeground": "#F1EDF1",
 		"debugToolBar.background": "#171529f6",
 		"gitDecoration.ignoredResourceForeground": "#69698f",
-		"terminal.background": "#161526",
+		"terminal.background": "#1C1C1C",
+		"terminal.border": "#303030",
+		"terminal.selectionBackground": "#303030",
+		"terminal.foreground": "#7B797B",
+		"badge.background": "#5D21D2",
+		"badge.foreground": "#F1EDF1",
 		"panel.border": "#191919",
-		"panelTitle.activeForeground": "#feeeff",
-		"statusBarItem.remoteBackground": "#303030",
-		"statusBarItem.remoteForeground": "#ccc"
+		"panelTitle.activeBorder": "#5D21D2",
+		"panelTitle.activeForeground": "#F1EDF1",
+		"panelTitle.inactiveForeground": "#7B797B"
 	},
 	"tokenColors": [
 		{
@@ -188,7 +211,7 @@
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"punctuation.definition.tag",
+				"punctuation.definition.tag"
 			],
 			"settings": {
 				"foreground": "#cfcfee"
@@ -220,7 +243,7 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block variable.other",
+				"meta.block variable.other"
 			],
 			"settings": {
 				"foreground": "#f6f3fc"
@@ -229,7 +252,7 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block",
+				"meta.block"
 			],
 			"settings": {
 				"foreground": "#f07178"
@@ -752,7 +775,7 @@
 		{
 			"name": "TOML - Entry",
 			"scope": [
-				"variable.key.toml",
+				"variable.key.toml"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -762,7 +785,7 @@
 		{
 			"name": "TOML - Table Punctuation",
 			"scope": [
-				"punctuation.definition.table.toml",
+				"punctuation.definition.table.toml"
 			],
 			"settings": {
 				"fontStyle": "bold",
