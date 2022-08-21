@@ -173,7 +173,7 @@
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"punctuation.definition.tag",
+				"punctuation.definition.tag"
 			],
 			"settings": {
 				"foreground": "#cfcfee"
@@ -205,7 +205,7 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block variable.other",
+				"meta.block variable.other"
 			],
 			"settings": {
 				"foreground": "#f6f3fc"
@@ -214,7 +214,7 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block",
+				"meta.block"
 			],
 			"settings": {
 				"foreground": "#f07178"
@@ -737,7 +737,7 @@
 		{
 			"name": "TOML - Entry",
 			"scope": [
-				"variable.key.toml",
+				"variable.key.toml"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -747,7 +747,7 @@
 		{
 			"name": "TOML - Table Punctuation",
 			"scope": [
-				"punctuation.definition.table.toml",
+				"punctuation.definition.table.toml"
 			],
 			"settings": {
 				"fontStyle": "bold",
