@@ -5,9 +5,9 @@
 		"lib": [
 			"ESNext"
 		],
-		"sourceMap": true,
-		"outDir": "build",
+		"sourceMap": false,
 		"strict": true,
+		"outDir": "build",
 	},
 	"exclude": [
 		"node_modules",
