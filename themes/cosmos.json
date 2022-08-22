@@ -88,6 +88,8 @@
 		"activityBar.background": "#191919",
 		"statusBar.background": "#191919",
 		"statusBar.foreground": "#7B797B",
+		"statusBar.noFolderBackground": "#191919",
+		"statusBar.noFolderForeground": "#7B797B",
 		"statusBarItem.remoteBackground": "#303030",
 		"statusBarItem.remoteForeground": "#F1EDF1",
 		"statusBar.debuggingBackground": "#5D21D2",
