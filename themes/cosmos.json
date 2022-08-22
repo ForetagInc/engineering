@@ -78,6 +78,7 @@
 		"titleBar.inactiveBackground": "#191919",
 		"titleBar.inactiveForeground": "#F1EDF1",
 		"menu.background": "#303030",
+		"menu.border": "#7B797B",
 		"menu.separatorBackground": "#7B797B",
 		"menu.selectionBackground": "#1C1C1C",
 		"menu.selectionForeground": "#F1EDF1",
