@@ -49,7 +49,6 @@
 		"hashicorp.terraform",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
 		"ms-azuretools.vscode-docker",
-		"GraphQL.vscode-graphql",
 		"tauri-apps.tauri-vscode",
 		"lottiefiles.vscode-lottie",
 		"CucumberOpen.cucumber-official",
