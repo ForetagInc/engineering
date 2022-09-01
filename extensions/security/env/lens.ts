@@ -6,7 +6,7 @@ import {
 	TextEditor,
 } from 'vscode';
 
-import { SECURITY_ENV_TOGGLE, SECURITY_ENV_PASTE, SECURITY_ENV_INSERT } from '@extensions/commands';
+import { SECURITY_ENV_TOGGLE, SECURITY_ENV_PASTE, SECURITY_ENV_INSERT } from '../../commands';
 
 export default class EnvLensProvider implements CodeLensProvider {
 	activeEditor: TextEditor | undefined
