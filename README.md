@@ -1,5 +1,9 @@
 # Foretag Development Toolkit
-For Visual Studio Code − Desktop and Cloud
+
+## Packages
+
+- Commitlint
+- Development Toolkit for VSCode
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/foretag.development-toolkit)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
 [![VSCode Downloads](https://img.shields.io/visual-studio-marketplace/d/foretag.development-toolkit?logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
