@@ -1,9 +1,11 @@
 # Foretag Development Toolkit
 For Visual Studio Code − Desktop and Cloud
 
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/foretag.development-toolkit.svg)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/foretag.development-toolkit.svg)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-star/foretag.development-toolkit.svg)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/foretag.development-toolkit)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+[![VSCode Downloads](https://img.shields.io/visual-studio-marketplace/d/foretag.development-toolkit?logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+[![Ratings](https://img.shields.io/visual-studio-marketplace/stars/foretag.development-toolkit?color=yellow&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
+[![OpenVSX Downloads](https://img.shields.io/open-vsx/dt/foretag/development-toolkit?logo=Open%20Source%20Initiative)](https://open-vsx.org/extension/foretag/development-toolkit/)
+[![OpenVSX Ratings](https://img.shields.io/open-vsx/stars/foretag/development-toolkit?color=yellow&logo=Open%20Source%20Initiative)](https://marketplace.visualstudio.com/items?itemName=foretag.development-toolkit)
 
 ### Marketplaces
 
