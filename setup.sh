@@ -7,6 +7,13 @@ apk add --no-cache --update curl
 
 # Rust and Cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup install nightly
+rustup component add rustfmt
+rustup component add rustfmt --toolchain nightly
+rustup component add clippy 
+rustup component add clippy --toolchain nightly
+
+cargo install cargo-expand
 
 # TODO: NVM (Node & NPM) support for Alpine is pending (https://github.com/nvm-sh/nvm/issues/1102)
 
@@ -14,4 +21,4 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 curl https://bun.sh/install | bash
 
 # DevOps
-apk add --update terraform docker openrc kubernetes k9s
+apk add --no-cache --update terraform docker openrc kubernetes k9s
