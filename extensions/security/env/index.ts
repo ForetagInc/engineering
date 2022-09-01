@@ -15,7 +15,7 @@ function debounce<F extends (...args: any) => any>(func: F, delay = 300) {
 	return debounced as (...args: Parameters<F>) => ReturnType<F>
 }
 
-export function securityEnvActivate(context: vscode.ExtensionContext) {
+export function activateSecurityEnv(context: vscode.ExtensionContext) {
 	const decorator = new Decorator()
 	const envLensProvider = new Lens()
 
@@ -78,4 +78,4 @@ export function securityEnvActivate(context: vscode.ExtensionContext) {
 }
 
 // this method is called when your extension is deactivated
-export function securityEnvDeactivate() { }
+export function deactivateSecurityEnv() { }
