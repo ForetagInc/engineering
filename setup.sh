@@ -13,3 +13,5 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Bun
 curl https://bun.sh/install | bash
 
+# DevOps
+apk add --update terraform docker openrc kubernetes k9s
