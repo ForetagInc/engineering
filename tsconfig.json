@@ -1,22 +1,15 @@
 {
 	"compilerOptions": {
 		"module": "CommonJS",
-		"rootDir": "extensions",
 		"target": "ES2022",
 		"lib": [
 			"ESNext"
 		],
-		"paths": {
-			"@extensions/*": [
-				"./*"
-			]
-		},
 		"sourceMap": false,
 		"outDir": "build",
 		"strict": true,
 	},
 	"exclude": [
-		"icons",
 		"node_modules",
 		".vscode-test"
 	]
