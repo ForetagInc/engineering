@@ -10,8 +10,7 @@
 		"foretag"
 	],
 	"activationEvents": [
-		"onLanguage:rust",
-		"onCommand:foretag-rust.setRustTarget"
+		"onStartupFinished"
 	],
 	"main": "./build/extensions/extensions.js",
 	"publisher": "foretag",
@@ -61,6 +60,18 @@
 			{
 				"command": "foretag-rust.setRustTarget",
 				"title": "Rust: Set Rust Target"
+			},
+			{
+				"command": "foretag-security.toggleEnvLine",
+				"title": "Toggle ENV line"
+			},
+			{
+				"command": "foretag-security.pasteEnvLine",
+				"title": "Paste Line"
+			},
+			{
+				"command": "foretag-security.insertEnvLine",
+				"title": "Insert Line"
 			}
 		],
 		"configuration": [

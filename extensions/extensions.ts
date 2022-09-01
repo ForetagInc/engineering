@@ -1,4 +1,7 @@
 import * as vscode from 'vscode';
+import { securityEnvActivate, securityEnvDeactivate } from './security/env';
+
+import { RUST_SET_TARGET } from './commands';
 
 let statusBarItem: vscode.StatusBarItem;
 
@@ -10,8 +13,10 @@ function onRustTargetUpdate() {
 }
 
 export function activate(context: vscode.ExtensionContext) {
+	securityEnvActivate(context);
+
 	statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 0);
-	statusBarItem.command = 'foretag-rust.setRustTarget';
+	statusBarItem.command = RUST_SET_TARGET;
 	statusBarItem.show();
 	context.subscriptions.push(statusBarItem);
 
@@ -24,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 		}));
 
-	let disposable = vscode.commands.registerCommand('foretag-rust.setRustTarget', () => {
+	let disposable = vscode.commands.registerCommand(RUST_SET_TARGET, () => {
 		const config = vscode.workspace.getConfiguration();
 		const extConfig = config['rust'];
 		const targets: string[] = extConfig['targets'];
@@ -41,4 +46,6 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 // TODO: implement deactivation of the target and reset to default
-export function deactivate() { }
+export function deactivate() {
+	securityEnvDeactivate();
+}
