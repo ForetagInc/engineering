@@ -3,6 +3,19 @@
 
 All notable changes to the "foretag.develoment-toolkit" extension will be documented in this file.
 
+## [0.1.4] - 2022-09-01
+### Added
+- Extension: Env variables security
+- Extension: File size
+
+## [0.0.5] to [0.1.3] - 2022-07
+### Updated
+- Cosmos theme
+- Cosmos icons
+- Performance optimizations, reduce startup time
+### Removed
+- Moon theme
+
 ## [0.0.5] - 2022-05-04
 ### Added
 - Extension: Rust targets
