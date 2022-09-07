@@ -5,6 +5,11 @@
 		"packages/*"
 	],
 	"author": "Foretag Inc.",
+	"scripts": {
+		"prebuild": "rm -rf build && npm run compile",
+		"build:development-toolkit": "npx lerna run --scope development-toolkit prepublish",
+		"compile": "tsc -p ./"
+	},
 	"license": "MPL2.0",
 	"devDependencies": {
 		"lerna": "^5.5.0"
