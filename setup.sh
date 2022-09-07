@@ -18,6 +18,10 @@ cargo install cargo-expand
 
 # Bun
 curl https://bun.sh/install | bash
+bun upgrade --canary
+
+# Bun global packages
+bun install husky -g
 
 # DevOps
 apk add --no-cache --update terraform docker openrc kubernetes k9s

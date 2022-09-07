@@ -1,0 +1,9 @@
+{
+	"name": "@foretag/engineering",
+	"author": {
+		"name": "Foretag Inc."
+	},
+	"dependencies": {
+		"@master/css": "^1.36.0"
+	}
+}

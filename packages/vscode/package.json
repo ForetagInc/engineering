@@ -2,13 +2,13 @@
 	"name": "development-toolkit",
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
-	"version": "0.1.4",
 	"keywords": [
 		"rust",
 		"themes",
 		"extension",
 		"foretag"
 	],
+	"license": "MPL-2.0",
 	"activationEvents": [
 		"onStartupFinished"
 	],

@@ -1,11 +1,14 @@
-# Commitlint for Foretag
+# Foretag Engineering Style Guide
 
 ## Getting started
 
 **Install dependencies**
 
 ```
-npm install --save-dev @commitlint/cli @foretag/{commitlint,commitlint-rules}
+# Globals
+npm install -g @commitlint/cli
+
+npm install --save-dev @foretag/engineering
 ```
 
 **Configure commitlint to use Foretag commit messages style config**
@@ -15,4 +18,4 @@ plugins:
     - @foretag/commitlint-rules
 extends:
     - @foretag/commitlint
-```
+```	

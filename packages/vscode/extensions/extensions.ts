@@ -1,9 +1,9 @@
-import * as vscode from 'vscode';
+import * as VSCode from 'vscode';
 
 import { activateRustTargets, deactivateRustTargets } from './rust-targets';
 import { activateSecurityEnv, deactivateSecurityEnv } from './security/env';
 
-export function activate(context: vscode.ExtensionContext) {
+export function activate(context: VSCode.ExtensionContext) {
 	activateSecurityEnv(context);
 	activateRustTargets(context);
 }
