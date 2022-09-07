@@ -6,9 +6,7 @@
 	],
 	"author": "Foretag Inc.",
 	"scripts": {
-		"prebuild": "rm -rf build && npm run compile",
-		"build:development-toolkit": "npx lerna run --scope development-toolkit prepublish",
-		"compile": "tsc -p ./"
+		"build:development-toolkit": "npx lerna run --scope development-toolkit prepublish"
 	},
 	"license": "MPL2.0",
 	"devDependencies": {

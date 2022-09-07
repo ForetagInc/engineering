@@ -14,10 +14,10 @@
 	],
 	"main": "./build/extensions/extensions.js",
 	"publisher": "foretag",
-	"icon": "assets/images/foretag_logo_yellow.png",
+	"icon": "../../assets/images/foretag_logo_yellow.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ForetagInc/vscode-toolkit.git"
+		"url": "https://github.com/ForetagInc/engineering.git"
 	},
 	"engines": {
 		"vscode": "^1.66.1"
@@ -335,17 +335,10 @@
 				"label": "Foretag: Cosmos",
 				"uiTheme": "vs-dark",
 				"path": "./themes/cosmos.json"
-			},
-			{
-				"label": "Foretag: Indigo",
-				"uiTheme": "vs-dark",
-				"path": "./themes/indigo.json"
 			}
 		]
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.1.2",
-		"@commitlint/config-conventional": "^17.1.0",
 		"@swc/cli": "^0.1.57",
 		"@swc/core": "^1.2.246",
 		"@types/fs-extra": "^9.0.13",
