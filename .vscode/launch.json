@@ -14,7 +14,7 @@
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [
-				"${workspaceFolder}/build/**/*.js"
+				"${workspaceFolder}/packages/vscode/build/**/*.js"
 			],
 			"preLaunchTask": "npm: watch"
 		}
