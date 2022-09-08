@@ -1,0 +1,10 @@
+.vscode/**
+.vscode-test/**
+
+.gitignore
+tsconfig.json
+
+.github/**
+assets/icons/**
+
+source

@@ -2,6 +2,7 @@
 	"name": "rust-toolkit",
 	"displayName": "Foretag Rust Toolkit",
 	"publisher": "foretag",
+	"version": "0.1.4",
 	"icon": "../../assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"rust",
@@ -18,10 +19,12 @@
 		"onLanguage:toml",
 		"workspaceContains:Cargo.toml"
 	],
-	"version": "0.1.4",
 	"categories": [
 		"Programming Languages"
 	],
+	"engines": {
+		"vscode": "^1.66.1"
+	},
 	"main": "./build/index.js",
 	"scripts": {
 		"prebuild": "rm -rf build && npm run compile",

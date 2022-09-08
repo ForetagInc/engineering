@@ -2,19 +2,19 @@
 	"name": "development-toolkit",
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
+	"publisher": "foretag",
+	"version": "0.1.4",
+	"icon": "../../assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"themes",
 		"extension",
 		"foretag"
 	],
-	"version": "0.1.4",
 	"license": "MPL-2.0",
 	"activationEvents": [
 		"onStartupFinished"
 	],
 	"main": "./build/extensions/extensions.js",
-	"publisher": "foretag",
-	"icon": "../../assets/images/foretag_logo_yellow.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ForetagInc/engineering.git"
