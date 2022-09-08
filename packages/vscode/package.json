@@ -8,6 +8,7 @@
 		"extension",
 		"foretag"
 	],
+	"version": "0.1.4",
 	"license": "MPL-2.0",
 	"activationEvents": [
 		"onStartupFinished"

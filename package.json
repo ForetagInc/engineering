@@ -1,6 +1,7 @@
 {
-	"name": "development-toolkit",
+	"name": "engineering",
 	"private": true,
+	"license": "MPL2.0",
 	"workspaces": [
 		"packages/*"
 	],
@@ -8,7 +9,6 @@
 	"scripts": {
 		"build:development-toolkit": "npx lerna run --scope development-toolkit prepublish"
 	},
-	"license": "MPL2.0",
 	"devDependencies": {
 		"lerna": "^5.5.0"
 	}
