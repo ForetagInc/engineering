@@ -8,24 +8,21 @@ const data: any = {};
 function cache(key: string, func: any, url: string, githubToken?: string) {
 
 	if (!data[key] || data[key].isRejected()) {
-		console.log('Fetching dependency: ', key);
 		const headers: { [key: string]: string; } = {
-			'User-Agent':
-				'VSCode.Crates (https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates)',
+			'User-Agent': 'VSCode.Foretag (https://github.com/ForetagInc/engineering)',
 			Accept: 'application/vnd.github.VERSION.raw',
 		};
-		if (githubToken) {
+
+		if (githubToken)
 			headers.Authorization = githubToken;
-		}
-		data[key] = func(url, {
-			headers
-		})
+
+		data[key] = func(url, { headers })
 			.then((response: string) => parseVersions(response, key))
-			.catch((resp: any) => {
-				console.error(resp);
-				throw resp;
+			.catch((response: any) => {
+				throw response;
 			});
 	}
+
 	return data[key];
 }
 

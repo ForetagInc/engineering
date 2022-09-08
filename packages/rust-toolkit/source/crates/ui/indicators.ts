@@ -7,17 +7,17 @@ import { window, StatusBarAlignment, StatusBarItem } from "vscode";
  * Extends StatusBarItem in order to add support prefixed text changes.
  */
 interface StatusBarItemExt extends StatusBarItem {
-  setText: (name?: string) => void;
+	setText: (name?: string) => void;
 }
 
 export const statusBarItem: StatusBarItemExt = window.createStatusBarItem(
-  StatusBarAlignment.Left,
-  0,
+	StatusBarAlignment.Left,
+	0,
 ) as StatusBarItemExt;
 statusBarItem.text = "Crates: OK";
 statusBarItem.setText = (text?: string) =>
-  (statusBarItem.text = text ? `Crates: ${text}` : "Crates: OK");
+	(statusBarItem.text = text ? `Crates: ${text}` : "Crates: OK");
 
 export default {
-  statusBarItem,
+	statusBarItem,
 };

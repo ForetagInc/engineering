@@ -4,11 +4,13 @@ import { RUST_SET_TARGET } from '../commands';
 
 let statusBarItem: vscode.StatusBarItem;
 
+const RUST_ANALYZER_TARGET = 'rust-analyzer.cargo.target';
+
 function onRustTargetUpdate() {
 	const config = vscode.workspace.getConfiguration();
-	let val = config.get('rust-analyzer.cargo.target');
+	let val = config.get(RUST_ANALYZER_TARGET);
 	let text = val ? val : 'system';
-	statusBarItem.text = `Rust target: ${text}`;
+	statusBarItem.text = `Target: ${text}`;
 }
 
 export function activateRustTargets(context: vscode.ExtensionContext) {
@@ -21,7 +23,7 @@ export function activateRustTargets(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(
 		vscode.workspace.onDidChangeConfiguration((ev) => {
-			if (ev.affectsConfiguration('rust-analyzer.cargo.target')) {
+			if (ev.affectsConfiguration(RUST_ANALYZER_TARGET)) {
 				onRustTargetUpdate();
 			}
 		}));
@@ -43,5 +45,4 @@ export function activateRustTargets(context: vscode.ExtensionContext) {
 }
 
 // TODO: implement deactivation of the target and reset to default
-export function deactivateRustTargets() {
-}
+export function deactivateRustTargets() { }
