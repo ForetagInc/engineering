@@ -1,5 +1,0 @@
-{
-	"$schema": "https://json.schemastore.org/lerna",
-	"version": "0.1.5",
-	"useWorkspaces": true
-}
