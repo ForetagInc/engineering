@@ -29,7 +29,8 @@
 	"scripts": {
 		"prebuild": "rm -rf build && npm run compile",
 		"prepublish": "npm run prebuild",
-		"compile": "tsc -p ./"
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
 	},
 	"contributes": {
 		"commands": [
@@ -108,7 +109,7 @@
 			}
 		},
 		{
-			"title": "Foretag Development Toolkit",
+			"title": "Foretag Rust Toolkit",
 			"type": "object",
 			"properties": {
 				"rust.targets": {

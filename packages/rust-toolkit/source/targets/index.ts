@@ -10,6 +10,7 @@ function onRustTargetUpdate() {
 	const config = vscode.workspace.getConfiguration();
 	let val = config.get(RUST_ANALYZER_TARGET);
 	let text = val ? val : 'system';
+	statusBarItem.tooltip = 'Rust target';
 	statusBarItem.text = `Target: ${text}`;
 }
 

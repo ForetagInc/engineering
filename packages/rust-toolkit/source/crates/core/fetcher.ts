@@ -1,14 +1,14 @@
-import Item from "./Item";
-import Dependency from "./Dependency";
-import { statusBarItem } from "../ui/indicators";
+import Item from './Item';
+import Dependency from './Dependency';
+import { statusBarItem } from '../ui/indicators';
 import {
 	versions as loVersions,
 	checkCargoRegistry,
-} from "../api/local_registry";
-import { versions as ghVersions } from "../api/github";
-import compareVersions from "../semver/compareVersions";
-import { CompletionItem, CompletionItemKind, CompletionList } from "vscode";
-import { sortText } from "../providers/autoCompletion";
+} from '../api/local_registry';
+import { versions as ghVersions } from '../api/github';
+import compareVersions from '../semver/compareVersions';
+import { CompletionItem, CompletionItemKind, CompletionList } from 'vscode';
+import { sortText } from '../providers/autoCompletion';
 
 export function fetchCrateVersions(
 	dependencies: Item[],
@@ -18,7 +18,7 @@ export function fetchCrateVersions(
 	localIndexHash?: string,
 	localGitBranch?: string
 ): [Promise<Dependency[]>, Map<string, Dependency[]>] {
-	statusBarItem.setText("👀 Fetching crates.io");
+	statusBarItem.setText('Fetching crates.io');
 
 	const isLocalIndexAvailable = useLocalIndex && checkCargoRegistry(localIndexHash, localGitBranch);
 	const versions = isLocalIndexAvailable ? loVersions : ghVersions;
@@ -32,7 +32,7 @@ export function fetchCrateVersions(
 				.then((json: any) => {
 					const versions = json.versions
 						.reduce((result: any[], item: any) => {
-							const isPreRelease = !shouldListPreRels && item.num.indexOf("-") !== -1;
+							const isPreRelease = !shouldListPreRels && item.num.indexOf('-') !== -1;
 							if (!item.yanked && !isPreRelease)
 								result.push(item.num);
 							return result;
@@ -57,7 +57,7 @@ export function fetchCrateVersions(
 					let featureCompletionItems: Map<string, CompletionList> = new Map();
 					json.versions.forEach((item: any) => {
 						if (item.features.length > 0) {
-							const isPreRelease = !shouldListPreRels && item.num.indexOf("-") !== -1;
+							const isPreRelease = !shouldListPreRels && item.num.indexOf('-') !== -1;
 							if (!item.yanked && !isPreRelease) {
 								featureCompletionItems!.set(item.num, new CompletionList(item.features.map((feature: string) => {
 									return new CompletionItem(feature, CompletionItemKind.Class);
@@ -86,7 +86,7 @@ export function fetchCrateVersions(
 					console.error(error);
 					return {
 						item,
-						error: item.key + ": " + error,
+						error: item.key + ': ' + error,
 					};
 				});
 		}

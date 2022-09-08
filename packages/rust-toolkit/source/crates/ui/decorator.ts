@@ -1,7 +1,7 @@
-import { TextEditor, TextEditorDecorationType, workspace, DecorationOptions } from "vscode";
-import { statusBarItem } from "./indicators";
-import Dependency from "../core/Dependency";
-import decoration, { latestVersion } from "./decoration";
+import { TextEditor, TextEditorDecorationType, workspace, DecorationOptions } from 'vscode';
+import { statusBarItem } from './indicators';
+import Dependency from '../core/Dependency';
+import decoration, { latestVersion } from './decoration';
 
 export let decorationHandle: TextEditorDecorationType;
 
@@ -19,7 +19,7 @@ export default function decorate(editor: TextEditor, dependencies: Array<Depende
 		if (dep && !dep.error && (dep.versions && dep.versions.length)) {
 			return dep;
 		} else if (!dep.error) {
-			dep.error = dep.item.key + ": " + "No versions found";
+			dep.error = dep.item.key + ': ' + 'No versions found';
 		}
 		errors.push(`${dep.error}`);
 		return dep;
@@ -49,23 +49,22 @@ export default function decorate(editor: TextEditor, dependencies: Array<Depende
 	if (decorationHandle) {
 		decorationHandle.dispose();
 	}
-	decorationHandle = latestVersion("VERSION");
+	decorationHandle = latestVersion('VERSION');
 	editor.setDecorations(decorationHandle, options);
 
 	if (errors.length) {
-		statusBarItem.setText("❗️ Completed with errors");
+		statusBarItem.setText('Completed with errors');
 	} else {
-		statusBarItem.setText("OK");
+		statusBarItem.setText('OK');
 	}
 }
 
-
 function loadPref(editor: TextEditor) {
-	const config = workspace.getConfiguration("", editor.document.uri);
-	const compatibleDecorator = config.get<string>("crates.compatibleDecorator") ?? "";
-	const incompatibleDecorator = config.get<string>("crates.incompatibleDecorator") ?? "";
-	const errorText = config.get<string>("crates.errorDecorator");
-	const errorDecorator = errorText ? errorText + "" : "";
+	const config = workspace.getConfiguration('', editor.document.uri);
+	const compatibleDecorator = config.get<string>('crates.compatibleDecorator') ?? '';
+	const incompatibleDecorator = config.get<string>('crates.incompatibleDecorator') ?? '';
+	const errorText = config.get<string>('crates.errorDecorator');
+	const errorDecorator = errorText ? errorText + '' : '';
 	return {
 		compatibleDecorator,
 		incompatibleDecorator,
