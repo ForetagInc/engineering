@@ -6,7 +6,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "VSCode Toolkit",
+			"name": "Development Toolkit",
 			"type": "extensionHost",
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
@@ -16,7 +16,20 @@
 			"outFiles": [
 				"${workspaceFolder}/packages/vscode/build/**/*.js"
 			],
-			"preLaunchTask": "npm: watch"
+			"preLaunchTask": "watch Development Toolkit"
+		},
+		{
+			"name": "Rust Toolkit",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}/packages/rust-toolkit"
+			],
+			"outFiles": [
+				"${workspaceFolder}/packages/rust-toolkit/build/**/*.js"
+			],
+			"preLaunchTask": "watch Rust Toolkit"
 		}
 	]
 }
