@@ -5,6 +5,11 @@
 	"keywords": [
 		"rust"
 	],
+	"activationEvents": [
+		"onLanguage:rust",
+		"onLanguage:toml",
+		"workspaceContains:Cargo.toml"
+	],
 	"version": "0.1.4",
 	"categories": [
 		"Programming Languages"
