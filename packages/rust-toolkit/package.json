@@ -2,8 +2,16 @@
 	"name": "rust-toolkit",
 	"displayName": "Foretag Rust Toolkit",
 	"publisher": "foretag",
+	"icon": "../../assets/images/foretag_logo_yellow.png",
 	"keywords": [
-		"rust"
+		"rust",
+		"crate",
+		"crates",
+		"targets",
+		"cargo",
+		"toml",
+		"toolkit",
+		"foretag"
 	],
 	"activationEvents": [
 		"onLanguage:rust",
@@ -14,6 +22,12 @@
 	"categories": [
 		"Programming Languages"
 	],
+	"main": "./build/index.js",
+	"scripts": {
+		"prebuild": "rm -rf build && npm run compile",
+		"prepublish": "npm run prebuild",
+		"compile": "tsc -p ./"
+	},
 	"contributes": {
 		"commands": [
 			{

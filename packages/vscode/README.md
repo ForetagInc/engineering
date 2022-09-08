@@ -26,9 +26,7 @@ We pride ourselves on building world-class software, and our developer experienc
 
 ## Extensions
 
-- Rust targets: Select your rust compilation target
 - Environment variables: Hide by default for security
-- File size: For the status bar
 
 ## Languages
 
