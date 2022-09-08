@@ -1,8 +1,9 @@
 {
 	"name": "rust-toolkit",
 	"displayName": "Foretag Rust Toolkit",
+	"description": "A collection of tools and extensions to enhance your Rust development experience.",
 	"publisher": "foretag",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"rust",
@@ -20,7 +21,8 @@
 		"workspaceContains:Cargo.toml"
 	],
 	"categories": [
-		"Programming Languages"
+		"Programming Languages",
+		"Extension Packs"
 	],
 	"engines": {
 		"vscode": "^1.66.1"
@@ -30,6 +32,11 @@
 		"type": "git",
 		"url": "https://github.com/ForetagInc/engineering.git"
 	},
+	"extensionPack": [
+		"rust-lang.rust-analyzer",
+		"vadimcn.vscode-lldb",
+		"tamasfe.even-better-toml"
+	],
 	"scripts": {
 		"prebuild": "rm -rf build && npm run compile",
 		"prepublish": "npm run prebuild",

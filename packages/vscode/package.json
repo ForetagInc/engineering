@@ -3,7 +3,7 @@
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
 	"publisher": "foretag",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"themes",
@@ -38,9 +38,8 @@
 		"Other"
 	],
 	"extensionPack": [
+		"foretag.frontend-toolkit",
 		"foretag.rust-toolkit",
-		"rust-lang.rust-analyzer",
-		"masterco.master-css-language-service",
 		"redhat.vscode-xml",
 		"redhat.vscode-yaml",
 		"dtsvet.vscode-wasm",
@@ -49,13 +48,8 @@
 		"hashicorp.terraform",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
 		"ms-azuretools.vscode-docker",
-		"tauri-apps.tauri-vscode",
-		"lottiefiles.vscode-lottie",
-		"joshbolduc.story-explorer",
 		"joshbolduc.commitlint",
-		"CucumberOpen.cucumber-official",
-		"vadimcn.vscode-lldb",
-		"tamasfe.even-better-toml"
+		"CucumberOpen.cucumber-official"
 	],
 	"contributes": {
 		"commands": [

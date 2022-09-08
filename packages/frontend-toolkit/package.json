@@ -1,0 +1,32 @@
+{
+	"name": "frontend-toolkit",
+	"displayName": "Foretag Frontend Toolkit",
+	"description": "A collection of tools and extensions to enhance your frontend development experience.",
+	"publisher": "foretag",
+	"version": "0.1.5",
+	"icon": "assets/images/foretag_logo_yellow.png",
+	"author": "foretag",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ForetagInc/engineering.git"
+	},
+	"keywords": [
+		"react",
+		"typescript",
+		"frontend",
+		"toolkit",
+		"foretag"
+	],
+	"categories": [
+		"Extension Packs"
+	],
+	"engines": {
+		"vscode": "^1.66.1"
+	},
+	"extensionPack": [
+		"masterco.master-css-language-service",
+		"tauri-apps.tauri-vscode",
+		"lottiefiles.vscode-lottie",
+		"joshbolduc.story-explorer"
+	]
+}

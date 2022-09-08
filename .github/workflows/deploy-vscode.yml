@@ -54,3 +54,23 @@ jobs:
                   pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
                   registryUrl: https://marketplace.visualstudio.com
                   extensionFile: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
+
+    deploy-frontend-toolkit:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: ./packages/frontend-toolkit
+        steps:
+            - uses: actions/checkout@v3
+            - name: Publish to OpenVSX Registry
+              id: publishToOpenVSX
+              uses: HaaLeo/publish-vscode-extension@v1
+              with:
+                  pat: ${{ secrets.OPEN_VSX_TOKEN }}
+                  packagePath: ./packages/frontend-toolkit
+            - name: Publish to VSCode Marketplace
+              uses: HaaLeo/publish-vscode-extension@v1
+              with:
+                  pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+                  registryUrl: https://marketplace.visualstudio.com
+                  extensionFile: ${{ steps.publishToOpenVSX.outputs.vsixPath }}
