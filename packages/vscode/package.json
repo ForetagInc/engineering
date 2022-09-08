@@ -55,7 +55,6 @@
 		"joshbolduc.commitlint",
 		"CucumberOpen.cucumber-official",
 		"vadimcn.vscode-lldb",
-		"serayuzgur.crates",
 		"tamasfe.even-better-toml"
 	],
 	"contributes": {
