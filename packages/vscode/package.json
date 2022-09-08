@@ -4,7 +4,7 @@
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
 	"publisher": "foretag",
 	"version": "0.1.4",
-	"icon": "../../assets/images/foretag_logo_yellow.png",
+	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"themes",
 		"extension",
@@ -24,7 +24,7 @@
 	},
 	"scripts": {
 		"prebuild": "rm -rf build && npm run compile",
-		"prepublish": "npm run prebuild && npm run icons:build",
+		"prepublish": "npm run prebuild && npm run icons:build && rm -rf build/icons",
 		"icons:build": "npm run icons:copy && node build/icons/index.js",
 		"icons:copy": "mkdir -p build/svgs && cp -R icons/svgs build",
 		"compile": "tsc -p ./",

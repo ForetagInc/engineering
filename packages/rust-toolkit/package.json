@@ -3,7 +3,7 @@
 	"displayName": "Foretag Rust Toolkit",
 	"publisher": "foretag",
 	"version": "0.1.4",
-	"icon": "../../assets/images/foretag_logo_yellow.png",
+	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"rust",
 		"crate",
@@ -26,6 +26,10 @@
 		"vscode": "^1.66.1"
 	},
 	"main": "./build/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ForetagInc/engineering.git"
+	},
 	"scripts": {
 		"prebuild": "rm -rf build && npm run compile",
 		"prepublish": "npm run prebuild",

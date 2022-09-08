@@ -47,6 +47,7 @@ jobs:
               uses: HaaLeo/publish-vscode-extension@v1
               with:
                   pat: ${{ secrets.OPEN_VSX_TOKEN }}
+                  packagePath: ./packages/rust-toolkit
             - name: Publish to VSCode Marketplace
               uses: HaaLeo/publish-vscode-extension@v1
               with:
