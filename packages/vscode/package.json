@@ -1,0 +1,153 @@
+{
+	"name": "development-toolkit",
+	"displayName": "Foretag Development Toolkit",
+	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
+	"publisher": "foretag",
+	"version": "0.1.4",
+	"icon": "../../assets/images/foretag_logo_yellow.png",
+	"keywords": [
+		"themes",
+		"extension",
+		"foretag"
+	],
+	"license": "MPL-2.0",
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./build/extensions/extensions.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ForetagInc/engineering.git"
+	},
+	"engines": {
+		"vscode": "^1.66.1"
+	},
+	"scripts": {
+		"prebuild": "rm -rf build && npm run compile",
+		"prepublish": "npm run prebuild && npm run icons:build",
+		"icons:build": "npm run icons:copy && node build/icons/index.js",
+		"icons:copy": "mkdir -p build/svgs && cp -R icons/svgs build",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"categories": [
+		"Programming Languages",
+		"Themes",
+		"Extension Packs",
+		"Visualization",
+		"Other"
+	],
+	"extensionPack": [
+		"foretag.rust-toolkit",
+		"rust-lang.rust-analyzer",
+		"masterco.master-css-language-service",
+		"redhat.vscode-xml",
+		"redhat.vscode-yaml",
+		"dtsvet.vscode-wasm",
+		"editorconfig.editorconfig",
+		"please-build.plz-vscode",
+		"hashicorp.terraform",
+		"ms-kubernetes-tools.vscode-kubernetes-tools",
+		"ms-azuretools.vscode-docker",
+		"tauri-apps.tauri-vscode",
+		"lottiefiles.vscode-lottie",
+		"joshbolduc.story-explorer",
+		"joshbolduc.commitlint",
+		"CucumberOpen.cucumber-official",
+		"vadimcn.vscode-lldb",
+		"tamasfe.even-better-toml"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "foretag-security.toggleEnvLine",
+				"title": "Toggle ENV line"
+			},
+			{
+				"command": "foretag-security.pasteEnvLine",
+				"title": "Paste Line"
+			},
+			{
+				"command": "foretag-security.insertEnvLine",
+				"title": "Insert Line"
+			}
+		],
+		"configuration": [],
+		"languages": [
+			{
+				"id": "dotenv",
+				"extensions": [
+					".env",
+					".env-sample",
+					".env.example",
+					".env.template",
+					".env.local",
+					".env.dev",
+					".env.dev.local",
+					".env.build",
+					".env.build.local",
+					".env.development",
+					".env.development.local",
+					".env.test",
+					".env.test.local",
+					".env.testing",
+					".env.qa",
+					".env.qa.local",
+					".env.uat",
+					".env.uat.local",
+					".env.stag",
+					".env.stag.local",
+					".env.stage",
+					".env.stage.local",
+					".env.staging",
+					".env.staging.local",
+					".env.live",
+					".env.live.local",
+					".env.production",
+					".env.production.local",
+					".env.prod",
+					".env.prod.local"
+				],
+				"filenamePatterns": [
+					"?*env"
+				],
+				"filenames": [
+					"env"
+				],
+				"configuration": "./languages/env/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "dotenv",
+				"scopeName": "source.env",
+				"path": "./languages/env/syntaxes/env.tmLanguage"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "foretag-cosmos-icons",
+				"label": "Foretag: Cosmos",
+				"path": "./build/icons.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Foretag: Cosmos",
+				"uiTheme": "vs-dark",
+				"path": "./themes/cosmos.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@swc/cli": "^0.1.57",
+		"@swc/core": "^1.2.246",
+		"@types/fs-extra": "^9.0.13",
+		"@types/node": "^18.7.6",
+		"@types/vscode": "^1.66.0",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"fs-extra": "^10.1.0"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"name": "bun-toolkit",
+	"displayName": "Foretag: Bun Toolkit",
+	"description": "Add the power of Bun to your VSCode",
+	"version": "0.1.4"
+}

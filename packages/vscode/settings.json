@@ -15,6 +15,7 @@
 	"rust-analyzer.checkOnSave.command": "clippy",
 	"html.completion.attributeDefaultValue": "singlequotes",
 	"html.format.indentInnerHtml": true,
+	"window.commandCenter": true,
 	// Foretag internal
 	"redhat.telemetry.enabled": false
 }
