@@ -8,3 +8,4 @@ tsconfig.json
 assets/icons/**
 
 source
+node_modules
