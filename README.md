@@ -8,6 +8,8 @@ World-class engineering needs first-class developer experience.
 
 - Engineering Guide
 - Development Toolkit for VSCode
+- Rust Toolkit for VSCode
+- Bun Toolkit for VSCode
 
 
 
