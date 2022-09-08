@@ -75,9 +75,76 @@
 			{
 				"command": "foretag-security.insertEnvLine",
 				"title": "Insert Line"
+			},
+			{
+				"command": "crates.replaceVersion",
+				"title": "Do not call manually ! Replace Version of the provided dependency",
+				"category": "👆 Crates"
+			},
+			{
+				"command": "crates.retry",
+				"title": "Retry to fetch Cargo.toml",
+				"category": "👆 Crates"
+			},
+			{
+				"command": "crates.updateAll",
+				"title": "Update All dependencies of the Cargo.toml",
+				"category": "👆 Crates"
 			}
 		],
 		"configuration": [
+			{
+				"type": "object",
+				"title": "Crates",
+				"properties": {
+					"crates.githubAuthBasic": {
+						"type": "string",
+						"scope": "resource",
+						"description": "The <username>:<personal-access-token> or <username>:<password> for accessing Github API."
+					},
+					"crates.errorDecorator": {
+						"type": "string",
+						"scope": "resource",
+						"default": "❗️❗️❗️",
+						"description": "The text to show when a dependency has errors."
+					},
+					"crates.incompatibleDecorator": {
+						"type": "string",
+						"scope": "resource",
+						"default": "❌ ${version}",
+						"description": "The text template to show when a dependency is not semver compatible. ${version} will be replaced by the latest version info."
+					},
+					"crates.compatibleDecorator": {
+						"type": "string",
+						"scope": "resource",
+						"default": "✅",
+						"description": "The text template to show when a dependency is semver compatible. ${version} will be replaced by the latest version info."
+					},
+					"crates.listPreReleases": {
+						"type": "boolean",
+						"scope": "resource",
+						"default": false,
+						"description": "If true, pre-release versions will be available."
+					},
+					"crates.useLocalCargoIndex": {
+						"type": "boolean",
+						"scope": "resource",
+						"default": true,
+						"description": "If true, crates will use local cargo index. (Requires git, cargo and updated crates.io index)"
+					},
+					"crates.localCargoIndexHash": {
+						"type": "string",
+						"scope": "resource",
+						"default": "github.com-1ecc6299db9ec823",
+						"description": "The hash path for crates.io index. Default value goes to official index. Alternative values would support registry source mirror with source replacement setup"
+					},
+					"crates.localCargoIndexBranch": {
+						"type": "string",
+						"scope": "resource",
+						"description": "The branch for crates.io index. Default value goes to origin/HEAD if not available then origin/master ."
+					}
+				}
+			},
 			{
 				"title": "Foretag Development Toolkit",
 				"type": "object",
@@ -344,10 +411,16 @@
 		"@swc/core": "^1.2.246",
 		"@types/fs-extra": "^9.0.13",
 		"@types/node": "^18.7.6",
+		"@types/request": "^2.48.8",
+		"@types/request-promise": "^4.1.48",
+		"@types/semver": "^7.3.12",
 		"@types/vscode": "^1.66.0",
 		"typescript": "^4.7.4"
 	},
 	"dependencies": {
-		"fs-extra": "^10.1.0"
+		"fs-extra": "^10.1.0",
+		"request": "^2.88.2",
+		"request-promise": "^4.2.6",
+		"semver": "~7.3.7"
 	}
 }
