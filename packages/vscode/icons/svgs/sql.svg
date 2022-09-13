@@ -3,8 +3,8 @@
 	.st0{fill:url(#SVGID_1_);}
 </style>
 	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="203.3477" y1="-25.4128" x2="636.6956" y2="725.1678" gradientTransform="matrix(1 0 0 1 0 140.11)">
-		<stop offset="0" style="stop-color:#FF00A0" />
-		<stop offset="1" style="stop-color:#9600FF" />
+		<stop offset="0" style="stop-color:#aeb8ca" />
+		<stop offset="1" style="stop-color:#aeb8ca" />
 	</linearGradient>
 	<path class="st0" d="M420,257.8L653.3,387v-51.8L420,206.3c-34.7,19.2-202.4,111.9-233.3,128.9c28.7,15.9,330.1,182.4,513.3,283.6
 	v51.6c-24.9,13.8-280,154.7-280,154.7C350.2,786.6,209.7,709,140,670.4V515.7l280,154.7l46.7-25.8L93.3,438.4v257.9L420,876.7
