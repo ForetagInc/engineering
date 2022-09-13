@@ -13,6 +13,7 @@
 		"scrollbarSlider.background": "#191919",
 		"scrollbarSlider.activeBackground": "#303030",
 		"scrollbarSlider.hoverBackground": "#303030",
+		"scrollbar.shadow": "#00000000",
 		"tree.indentGuidesStroke": "#303030",
 		"editor.background": "#1C1C1C",
 		"editor.foreground": "#F1EDF1",
@@ -27,7 +28,6 @@
 		"editor.findMatchBackground": "#534f79",
 		"editor.foldBackground": "#7B797B25",
 		"editorMarkerNavigation.background": "#161526",
-		"scrollbar.shadow": "#00000000",
 		"editorBracketMatch.background": "#303030",
 		"editorBracketMatch.border": "#303030",
 		"editorIndentGuide.background": "#303030",
@@ -117,7 +117,11 @@
 		"panel.border": "#191919",
 		"panelTitle.activeBorder": "#5D21D2",
 		"panelTitle.activeForeground": "#F1EDF1",
-		"panelTitle.inactiveForeground": "#7B797B"
+		"panelTitle.inactiveForeground": "#7B797B",
+		"commandCenter.background": "#191919",
+		"commandCenter.foreground": "#555555",
+		"commandCenter.activeBackground": "#1c1c1c",
+		"commandCenter.border": "#1c1c1c"
 	},
 	"tokenColors": [
 		{
