@@ -3,7 +3,7 @@
 	"displayName": "Foretag Rust Toolkit",
 	"description": "A collection of tools and extensions to enhance your Rust development experience.",
 	"publisher": "foretag",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"rust",

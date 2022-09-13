@@ -2,6 +2,6 @@
 	"name": "bun-toolkit",
 	"displayName": "Foretag: Bun Toolkit",
 	"description": "A collection of tools and extensions to enhance your Bun development experience.",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"extensionPack": []
 }
