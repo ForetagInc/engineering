@@ -145,6 +145,7 @@ export const fileNames = {
 	'vue.config.js': '_file_vue',
 	'master.config.js': '_file_mastercss',
 	'master.config.ts': '_file_mastercss',
+	'Cargo.toml': '_file_crate',
 	// jenkinsfile: '_file_jenkins',
 	// 'gatsby.config.js': '_file_gatsby',
 	// 'firebase.json': '_file_firebase',
