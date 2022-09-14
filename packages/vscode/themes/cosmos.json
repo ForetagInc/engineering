@@ -2,6 +2,7 @@
 	"name": "Cosmos",
 	"type": "dark",
 	"colors": {
+		"focusBorder": "#555555",
 		"button.background": "#5D21D2",
 		"button.foreground": "#F1EDF1",
 		"progressBar.background": "#5D21D2",
@@ -81,12 +82,12 @@
 		"tab.hoverBackground": "#303030",
 		"editorGroupHeader.tabsBackground": "#191919",
 		"titleBar.activeBackground": "#191919",
-		"titleBar.activeForeground": "#F1EDF1",
+		"titleBar.activeForeground": "#7B797B",
 		"titleBar.inactiveBackground": "#191919",
-		"titleBar.inactiveForeground": "#F1EDF1",
+		"titleBar.inactiveForeground": "#7B797B",
 		"menu.background": "#303030",
-		"menu.border": "#7B797B",
-		"menu.separatorBackground": "#7B797B",
+		"menu.border": "#1c1c1c",
+		"menu.separatorBackground": "#262626",
 		"menu.selectionBackground": "#1C1C1C",
 		"menu.selectionForeground": "#F1EDF1",
 		"activityBarBadge.background": "#5D21D2",
@@ -107,6 +108,7 @@
 		"input.border": "#303030",
 		"inputOption.activeBackground": "#303030",
 		"inputOption.activeForeground": "#F1EDF1",
+		"inputOption.activeBorder": "#5D21D2",
 		"debugToolBar.background": "#5D21D2",
 		"gitDecoration.ignoredResourceForeground": "#69698f",
 		"terminal.background": "#1C1C1C",
@@ -122,7 +124,14 @@
 		"commandCenter.background": "#191919",
 		"commandCenter.foreground": "#555555",
 		"commandCenter.activeBackground": "#1c1c1c",
-		"commandCenter.border": "#1c1c1c"
+		"commandCenter.border": "#1c1c1c",
+		"welcomePage.progress.foreground": "#5D21D2",
+		"welcomePage.progress.background": "#1C1C1C",
+		"welcomePage.tileBackground": "#191919",
+		"welcomePage.tileHoverBackground": "#303030",
+		"settings.headerForeground": "#555555",
+		"settings.textInputBorder": "#262626",
+		"settings.numberInputBorder": "#262626"
 	},
 	"tokenColors": [
 		{
