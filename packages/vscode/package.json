@@ -3,7 +3,7 @@
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
 	"publisher": "foretag",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"themes",

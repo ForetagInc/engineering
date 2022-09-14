@@ -111,7 +111,7 @@ export const fileExtensions = {
 	prop: '_file_settings',
 	settings: '_file_settings',
 	props: '_file_settings',
-	toml: '_file_settings',
+	toml: '_file_toml',
 	prefs: '_file_settings',
 	env: '_file_settings',
 	'env.development': '_file_settings',
