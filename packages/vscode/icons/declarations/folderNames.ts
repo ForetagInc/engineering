@@ -2,6 +2,7 @@
 export const folderNames = {
 	build: '_file_folder_dist',
 	dist: '_file_folder_dist',
+	target: '_file_folder_dist',
 	out: '_file_folder_dist',
 	src: '_file_folder_src',
 	source: '_file_folder_src',

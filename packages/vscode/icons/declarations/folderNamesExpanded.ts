@@ -2,6 +2,7 @@
 export const folderNamesExpanded = {
 	build: '_file_folder_dist_open',
 	dist: '_file_folder_dist_open',
+	target: '_file_folder_dist',
 	out: '_file_folder_dist_open',
 	src: '_file_folder_src_open',
 	source: '_file_folder_src_open',
