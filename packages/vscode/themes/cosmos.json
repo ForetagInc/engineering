@@ -6,9 +6,11 @@
 		"button.background": "#5D21D2",
 		"button.foreground": "#F1EDF1",
 		"progressBar.background": "#5D21D2",
-		"list.focusBackground": "#191919",
+		"list.focusBackground": "#555555",
+		"list.focusForeground": "#F1EDF1",
+		"list.hoverBackground": "#444444",
+		"list.hoverForeground": "#7B797B",
 		"list.activeSelectionForeground": "#f2eeff",
-		"list.hoverBackground": "#1C1C1C",
 		"list.activeSelectionBackground": "#303030",
 		"list.inactiveSelectionBackground": "#303030",
 		"scrollbarSlider.background": "#303030",
@@ -131,7 +133,11 @@
 		"welcomePage.tileHoverBackground": "#303030",
 		"settings.headerForeground": "#555555",
 		"settings.textInputBorder": "#262626",
-		"settings.numberInputBorder": "#262626"
+		"settings.numberInputBorder": "#262626",
+		"notificationCenterHeader.background": "#262626",
+		"notificationCenterHeader.foreground": "#F1EDF1",
+		"notifications.border": "#303030",
+		"notifications.background": "#262626"
 	},
 	"tokenColors": [
 		{
