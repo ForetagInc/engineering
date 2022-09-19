@@ -4,10 +4,12 @@ import Lens from './lens';
 
 import { SECURITY_ENV_TOGGLE, SECURITY_ENV_PASTE, SECURITY_ENV_INSERT } from '../../commands';
 
-function debounce<F extends (...args: any) => any>(func: F, delay = 300) {
+function debounce<F extends (...args: any) => any>(func: F, delay = 300)
+{
 	let timer: NodeJS.Timeout | undefined = undefined
 
-	const debounced = (...args: any) => {
+	const debounced = (...args: any) =>
+	{
 		clearTimeout(timer)
 		timer = setTimeout(() => func(...args), delay)
 	}
@@ -15,7 +17,8 @@ function debounce<F extends (...args: any) => any>(func: F, delay = 300) {
 	return debounced as (...args: Parameters<F>) => ReturnType<F>
 }
 
-export function activateSecurityEnv(context: vscode.ExtensionContext) {
+export function activateSecurityEnv(context: vscode.ExtensionContext)
+{
 	const decorator = new Decorator()
 	const envLensProvider = new Lens()
 
@@ -26,7 +29,8 @@ export function activateSecurityEnv(context: vscode.ExtensionContext) {
 
 	const toggleCommandDisposable = vscode.commands.registerCommand(
 		SECURITY_ENV_TOGGLE,
-		(index: number) => {
+		(index: number) =>
+		{
 			if (index === undefined) return
 			decorator.toggleIndex(index)
 		}
@@ -34,7 +38,8 @@ export function activateSecurityEnv(context: vscode.ExtensionContext) {
 
 	const pasteCommandDisposable = vscode.commands.registerCommand(
 		SECURITY_ENV_PASTE,
-		async (index: number) => {
+		async (index: number) =>
+		{
 			if (index === undefined) return
 			const clipboard = await vscode.env.clipboard.readText()
 			decorator.pasteIndex(index, clipboard)
@@ -43,7 +48,8 @@ export function activateSecurityEnv(context: vscode.ExtensionContext) {
 
 	const insertCommandDisposable = vscode.commands.registerCommand(
 		SECURITY_ENV_INSERT,
-		async (index: number) => {
+		async (index: number) =>
+		{
 			if (index === undefined) return
 			decorator.insertIndex(index)
 		}
@@ -57,7 +63,8 @@ export function activateSecurityEnv(context: vscode.ExtensionContext) {
 			envLensProvider
 		)
 
-	vscode.window.onDidChangeActiveTextEditor((editor) => {
+	vscode.window.onDidChangeActiveTextEditor((editor) =>
+	{
 		decorator.setTextEditor(editor)
 	})
 
@@ -67,7 +74,8 @@ export function activateSecurityEnv(context: vscode.ExtensionContext) {
 	// to keep the debounce time short
 	const debouncedHideEnv = debounce(() => decorator.hideEnvs(), 200)
 
-	vscode.window.onDidChangeTextEditorSelection((e) => {
+	vscode.window.onDidChangeTextEditorSelection((e) =>
+	{
 		debouncedHideEnv()
 	})
 

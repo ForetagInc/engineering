@@ -2,6 +2,15 @@
 
 All notable changes to the "foretag.develoment-toolkit" extension will be documented in this file.
 
+## [0.1.4] to [0.1.7]
+### Added
+- Extension: Transparency mode
+### Updated
+- Theme: Cosmos
+	- Color tokens for TypeScript
+	- Color tokens for Rust
+	- Unified color scheme and contrasts
+
 ## [0.1.4] - 2022-09-01
 ### Added
 - Extension: Env variables security
