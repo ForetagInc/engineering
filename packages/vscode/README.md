@@ -27,6 +27,7 @@ We pride ourselves on building world-class software, and our developer experienc
 ## Extensions
 
 - Environment variables: Hide by default for security
+- Transparency: Brings transparency to VSCode
 
 ## Languages
 
