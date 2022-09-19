@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import { PowerShell } from 'node-powershell';
 
-export function activateSecurityEnv(context: vscode.ExtensionContext)
+export function activateTransparency(context: vscode.ExtensionContext)
 {
 	if (process.platform === 'win32')
 	{
@@ -30,3 +30,6 @@ export function activateSecurityEnv(context: vscode.ExtensionContext)
 		}
 	}
 }
+
+// this method is called when your extension is deactivated
+export function deactivateTransparency() { }
