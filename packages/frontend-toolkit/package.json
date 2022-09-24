@@ -27,6 +27,7 @@
 		"masterco.master-css-language-service",
 		"tauri-apps.tauri-vscode",
 		"lottiefiles.vscode-lottie",
-		"joshbolduc.story-explorer"
+		"joshbolduc.story-explorer",
+		"firefox-devtools.vscode-firefox-debug"
 	]
 }
