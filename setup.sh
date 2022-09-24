@@ -25,3 +25,6 @@ bun install husky -g
 
 # DevOps
 apk add --no-cache --update terraform docker openrc kubernetes k9s
+
+# Setup configurations
+cp -R .config ~/.config

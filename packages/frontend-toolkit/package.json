@@ -3,7 +3,7 @@
 	"displayName": "Foretag Frontend Toolkit",
 	"description": "A collection of tools and extensions to enhance your frontend development experience.",
 	"publisher": "foretag",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"author": "foretag",
 	"repository": {

@@ -44,7 +44,6 @@
 		"redhat.vscode-yaml",
 		"dtsvet.vscode-wasm",
 		"editorconfig.editorconfig",
-		"please-build.plz-vscode",
 		"hashicorp.terraform",
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
 		"ms-azuretools.vscode-docker",
