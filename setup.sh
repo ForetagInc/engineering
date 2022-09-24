@@ -21,7 +21,7 @@ curl https://bun.sh/install | bash
 bun upgrade --canary
 
 # Bun global packages
-bun install husky -g
+bun install husky @moonrepo/cli -g
 
 # DevOps
 apk add --no-cache --update terraform docker openrc kubernetes k9s
