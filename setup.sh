@@ -2,7 +2,7 @@
 apk update
 apk upgrade
 
-apk add --no-cache --update bash curl
+apk add --no-cache --update fish curl
 
 # Rust and Cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -21,7 +21,10 @@ curl https://bun.sh/install | bash
 bun upgrade --canary
 
 # Bun global packages
-bun install husky -g
+bun install husky @moonrepo/cli -g
 
 # DevOps
 apk add --no-cache --update terraform docker openrc kubernetes k9s
+
+# Setup configurations
+cp -R .config ~/.config

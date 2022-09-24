@@ -3,7 +3,7 @@
 	"displayName": "Foretag Frontend Toolkit",
 	"description": "A collection of tools and extensions to enhance your frontend development experience.",
 	"publisher": "foretag",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"author": "foretag",
 	"repository": {
@@ -27,6 +27,7 @@
 		"masterco.master-css-language-service",
 		"tauri-apps.tauri-vscode",
 		"lottiefiles.vscode-lottie",
-		"joshbolduc.story-explorer"
+		"joshbolduc.story-explorer",
+		"firefox-devtools.vscode-firefox-debug"
 	]
 }
