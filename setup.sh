@@ -2,7 +2,7 @@
 apk update
 apk upgrade
 
-apk add --no-cache --update fish curl
+apk add --no-cache --update bash curl
 
 # Rust and Cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
