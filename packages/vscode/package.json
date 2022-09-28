@@ -3,7 +3,7 @@
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
 	"publisher": "foretag",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"themes",
@@ -42,10 +42,8 @@
 		"foretag.rust-toolkit",
 		"redhat.vscode-xml",
 		"redhat.vscode-yaml",
-		"dtsvet.vscode-wasm",
 		"editorconfig.editorconfig",
 		"hashicorp.terraform",
-		"ms-kubernetes-tools.vscode-kubernetes-tools",
 		"ms-azuretools.vscode-docker",
 		"joshbolduc.commitlint",
 		"CucumberOpen.cucumber-official"
