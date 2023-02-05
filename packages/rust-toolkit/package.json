@@ -4,7 +4,7 @@
 	"description": "A collection of tools and extensions to enhance your Rust development experience.",
 	"publisher": "foretag",
 	"license": "MPL-2.0",
-	"version": "0.2",
+	"version": "0.2.0",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"rust",
