@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// decorations, based on configuration
 	const editorConfig = vscode.workspace.getConfiguration('editor');
 	const configuration = vscode.workspace.getConfiguration('foretag-jump');
-\
+
 	let fontFamily = configuration.get<string>('fontFamily');
 	fontFamily = fontFamily || editorConfig.get<string>('fontFamily');
 
@@ -59,7 +59,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 	function setJumpyMode(value: boolean) {
 		isJumpyMode = value;
-		vscode.commands.executeCommand('setContext', 'foretag-jump.isJumpyMode', value);
+		vscode.commands.executeCommand(
+			'setContext',
+			'foretag-jump.isJumpyMode',
+			value,
+		);
 	}
 
 	function runJumpy(jumpyFn: JumpyFn, regexp: RegExp) {
@@ -84,7 +88,7 @@ export function activate(context: vscode.ExtensionContext) {
 							position.character + 2,
 							context,
 							codeArray[i],
-						)
+						);
 					}
 				})
 				.filter((x) => !!x);
@@ -99,7 +103,7 @@ export function activate(context: vscode.ExtensionContext) {
 								position.character + 2,
 								context,
 								codeArray[i],
-						),
+						  ),
 				)
 				.filter((x) => !!x);
 
