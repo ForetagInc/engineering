@@ -3,7 +3,8 @@
 	"displayName": "Foretag Frontend Toolkit",
 	"description": "A collection of tools and extensions to enhance your frontend development experience.",
 	"publisher": "foretag",
-	"version": "0.1.8",
+	"license": "MPL-2.0",
+	"version": "0.2.0",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"author": "foretag",
 	"repository": {
