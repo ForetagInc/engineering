@@ -1,11 +1,14 @@
 import * as VSCode from 'vscode';
 
-import { activateSecurityEnv, deactivateSecurityEnv } from './security/env';
+import { 
+	activate as activateJump,
+	deactivate as deactivateJump
+} from './dx/jump';
 
 export function activate(context: VSCode.ExtensionContext) {
-	activateSecurityEnv(context);
+	activateJump(context);
 }
 
 export function deactivate() {
-	deactivateSecurityEnv();
+	deactivateJump();
 }
