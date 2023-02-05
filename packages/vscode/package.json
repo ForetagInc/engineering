@@ -4,7 +4,7 @@
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
 	"publisher": "foretag",
 	"license": "MPL-2.0",
-	"version": "0.2",
+	"version": "0.2.0",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"themes",
