@@ -1,14 +1,21 @@
-import * as VSCode from 'vscode';
+import * as vscode from 'vscode';
 
-import { 
+import {
 	activate as activateJump,
-	deactivate as deactivateJump
+	deactivate as deactivateJump,
 } from './dx/jump';
 
-export function activate(context: VSCode.ExtensionContext) {
+import {
+	activate as activateFileSize,
+	deactivate as deactivateFileSize,
+} from './file';
+
+export function activate(context: vscode.ExtensionContext) {
 	activateJump(context);
+	activateFileSize(context);
 }
 
 export function deactivate() {
 	deactivateJump();
+	deactivateFileSize();
 }
