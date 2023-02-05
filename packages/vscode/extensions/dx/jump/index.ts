@@ -107,7 +107,9 @@ export function activate(context: vscode.ExtensionContext) {
 				)
 				.filter((x) => !!x);
 
+			// @ts-ignore
 			editor?.setDecorations(decorationTypeOffset2, decorationsOffset2);
+			// @ts-ignore
 			editor?.setDecorations(decorationTypeOffset1, decorationsOffset1);
 
 			setJumpyMode(true);
