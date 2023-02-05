@@ -40,13 +40,10 @@
 	"extensionPack": [
 		"foretag.frontend-toolkit",
 		"foretag.rust-toolkit",
-		"redhat.vscode-xml",
-		"redhat.vscode-yaml",
 		"editorconfig.editorconfig",
+		"moonrepo.moon-console",
 		"hashicorp.terraform",
-		"ms-azuretools.vscode-docker",
-		"joshbolduc.commitlint",
-		"CucumberOpen.cucumber-official"
+		"ms-azuretools.vscode-docker"
 	],
 	"contributes": {
 		"commands": [
