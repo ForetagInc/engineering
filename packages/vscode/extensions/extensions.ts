@@ -1,11 +1,21 @@
-import * as VSCode from 'vscode';
+import * as vscode from 'vscode';
 
-import { activateSecurityEnv, deactivateSecurityEnv } from './security/env';
+import {
+	activate as activateJump,
+	deactivate as deactivateJump,
+} from './dx/jump';
 
-export function activate(context: VSCode.ExtensionContext) {
-	activateSecurityEnv(context);
+import {
+	activate as activateFileSize,
+	deactivate as deactivateFileSize,
+} from './file';
+
+export function activate(context: vscode.ExtensionContext) {
+	activateJump(context);
+	activateFileSize(context);
 }
 
 export function deactivate() {
-	deactivateSecurityEnv();
+	deactivateJump();
+	deactivateFileSize();
 }

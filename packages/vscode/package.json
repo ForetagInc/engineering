@@ -3,14 +3,14 @@
 	"displayName": "Foretag Development Toolkit",
 	"description": "Foretag themes, icons, extensions, languages, snippets and more for VS Code",
 	"publisher": "foretag",
-	"version": "0.1.8",
+	"license": "MPL-2.0",
+	"version": "0.2",
 	"icon": "assets/images/foretag_logo_yellow.png",
 	"keywords": [
 		"themes",
 		"extension",
 		"foretag"
 	],
-	"license": "MPL-2.0",
 	"activationEvents": [
 		"onStartupFinished"
 	],
@@ -40,13 +40,10 @@
 	"extensionPack": [
 		"foretag.frontend-toolkit",
 		"foretag.rust-toolkit",
-		"redhat.vscode-xml",
-		"redhat.vscode-yaml",
 		"editorconfig.editorconfig",
+		"moonrepo.moon-console",
 		"hashicorp.terraform",
-		"ms-azuretools.vscode-docker",
-		"joshbolduc.commitlint",
-		"CucumberOpen.cucumber-official"
+		"ms-azuretools.vscode-docker"
 	],
 	"contributes": {
 		"commands": [
